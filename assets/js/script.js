@@ -428,3 +428,67 @@ const imageObserver = new IntersectionObserver((entries) => {
 
 images.forEach(img => imageObserver.observe(img));
 
+// Enhanced Email Button Interactions
+function enhanceEmailButton() {
+    const emailBtn = document.querySelector('.contact-actions .btn-primary');
+    
+    if (emailBtn) {
+        // Add ripple effect on click
+        emailBtn.addEventListener('click', function(e) {
+            // Create ripple element
+            const ripple = document.createElement('span');
+            ripple.classList.add('ripple');
+            
+            // Calculate position and size
+            const rect = this.getBoundingClientRect();
+            const size = Math.max(rect.width, rect.height);
+            const x = e.clientX - rect.left - size / 2;
+            const y = e.clientY - rect.top - size / 2;
+            
+            // Set position and size
+            ripple.style.width = ripple.style.height = size + 'px';
+            ripple.style.left = x + 'px';
+            ripple.style.top = y + 'px';
+            
+            // Add to button
+            this.appendChild(ripple);
+            
+            // Remove after animation
+            setTimeout(() => {
+                ripple.remove();
+            }, 600);
+            
+            // Add loading state
+            this.classList.add('loading');
+            
+            // Simulate email client opening delay
+            setTimeout(() => {
+                this.classList.remove('loading');
+                this.classList.add('success');
+                
+                // Show success message briefly
+                const originalText = this.querySelector('.btn-text').textContent;
+                this.querySelector('.btn-text').textContent = 'Opening...';
+                
+                setTimeout(() => {
+                    this.classList.remove('success');
+                    this.querySelector('.btn-text').textContent = originalText;
+                }, 2000);
+            }, 800);
+        });
+        
+        // Add hover sound effect (optional)
+        emailBtn.addEventListener('mouseenter', function() {
+            // You can add a subtle sound effect here if desired
+            this.style.setProperty('--hover-intensity', '1');
+        });
+        
+        emailBtn.addEventListener('mouseleave', function() {
+            this.style.setProperty('--hover-intensity', '0');
+        });
+    }
+}
+
+// Initialize email button enhancements
+document.addEventListener('DOMContentLoaded', enhanceEmailButton);
+
