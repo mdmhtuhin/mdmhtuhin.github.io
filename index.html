@@ -12,7 +12,7 @@
     <meta name="author" content="Md Mehedi Hasan Tuhin">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://mdmhtuhin.github.io/">
-
+    <link rel="icon" href="/assets/images/favicon.png" type="image/svg+xml">
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://mdmhtuhin.github.io/">
@@ -33,25 +33,25 @@
     <meta name="theme-color" content="#ffffff">
     <!-- JSON-LD Structured Data for SEO -->
     <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Md Mehedi Hasan Tuhin",
-      "jobTitle": "Software Engineer",
-      "url": "https://mdmhtuhin.github.io",
-      "sameAs": [
-        "https://github.com/mdmhtuhin",
-        "https://linkedin.com/in/tuhinh",
-        "https://www.facebook.com/mehedihasan.tuhin2",
-        "https://x.com/mdmhtuhin"
-      ],
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Dhaka",
-        "addressCountry": "Bangladesh"
-      },
-      "knowsAbout": ["Ruby on Rails", "JavaScript", "Vue.js", "React Native", "PostgreSQL", "Software Architecture"]
-    }
+        {
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Md Mehedi Hasan Tuhin",
+            "jobTitle": "Software Engineer",
+            "url": "https://mdmhtuhin.github.io",
+            "sameAs": [
+                "https://github.com/mdmhtuhin",
+                "https://linkedin.com/in/tuhinh",
+                "https://www.facebook.com/mehedihasan.tuhin2",
+                "https://x.com/mdmhtuhin"
+            ],
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Dhaka",
+                "addressCountry": "Bangladesh"
+            },
+            "knowsAbout": ["Ruby on Rails", "JavaScript", "Vue.js", "React Native", "PostgreSQL", "Software Architecture"]
+        }
     </script>
 
     <!-- Lucide Icons -->
@@ -69,526 +69,391 @@
 </head>
 <body>
 
-    <!-- Navigation Bar -->
-    <nav id="navbar">
-        <div class="container nav-inner">
-            <!-- Logo -->
-            <a href="#home" class="logo" aria-label="Md Mehedi Hasan Tuhin Portfolio Home">
-                <img src="assets/images/nem_logo.png" alt="MHT.dev logo" class="logo-img" width="96" height="96" loading="lazy">
-<!--                <span>MHT<span class="text-red">.dev</span></span>-->
-            </a>
-            
-            <!-- Desktop Menu -->
-            <div class="desktop-menu">
-                <a href="#home" class="nav-link">Home</a>
-                <a href="#about" class="nav-link">About</a>
-                <a href="#skills" class="nav-link">Skills</a>
-                <a href="#projects" class="nav-link">Projects</a>
-                <a href="#experience" class="nav-link">Experience</a>
-                <a href="#contact" class="nav-link">Contact</a>
+<!-- Navigation Bar -->
+<nav id="navbar">
+    <div class="container nav-inner">
+        <!-- Logo -->
+        <a href="#home" class="logo" aria-label="Md Mehedi Hasan Tuhin Portfolio Home">
+            <img src="assets/images/nem_logo.png" width="100" height="30" alt="NEM Logo" class="nem-logo" loading="lazy" />
+        </a>
 
-                <!-- Theme Toggle -->
-                <button id="theme-toggle-desktop" class="theme-btn" aria-label="Toggle Dark Mode">
-                    <i data-lucide="sun" class="sun-icon"></i>
-                    <i data-lucide="moon" class="moon-icon"></i>
-                </button>
+        <!-- Desktop Menu -->
+        <div class="desktop-menu">
+            <a href="#home" class="nav-link">Home</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#skills" class="nav-link">Skills</a>
+            <a href="#projects" class="nav-link">Projects</a>
+            <a href="#experience" class="nav-link">Experience</a>
+            <a href="#contact" class="nav-link">Contact</a>
+
+            <!-- Theme Toggle -->
+            <button id="theme-toggle-desktop" class="theme-btn" aria-label="Toggle Dark Mode">
+                <i data-lucide="sun" class="sun-icon"></i>
+                <i data-lucide="moon" class="moon-icon"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Controls -->
+        <div class="mobile-controls">
+            <button id="theme-toggle-mobile" class="theme-btn" aria-label="Toggle Dark Mode">
+                <i data-lucide="sun" class="sun-icon"></i>
+                <i data-lucide="moon" class="moon-icon"></i>
+            </button>
+            <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Open Mobile Menu">
+                <i data-lucide="menu" id="menu-icon"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Mobile Menu Dropdown -->
+    <div id="mobile-menu" class="mobile-menu-dropdown hidden">
+        <a href="#home" class="mobile-link">Home</a>
+        <a href="#about" class="mobile-link">About</a>
+        <a href="#skills" class="mobile-link">Skills</a>
+        <a href="#projects" class="mobile-link">Projects</a>
+        <a href="#experience" class="mobile-link">Experience</a>
+        <a href="#contact" class="mobile-link">Contact</a>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section id="home" class="reveal-on-scroll">
+    <div class="container hero-grid">
+        <!-- Text Content -->
+        <div class="hero-text">
+            <div class="badge">Software Engineer & Backend Specialist</div>
+            <h1>
+                Md Mehedi Hasan <span class="text-red">Tuhin</span>
+            </h1>
+            <p>
+                Architecting scalable backend solutions with <span class="text-red" style="font-weight: 600">Ruby on Rails</span> and building dynamic mobile & web apps with <span class="text-yellow" style="font-weight: 600">React Native & Vue.js</span>. I turn complex logic into clean code.
+            </p>
+
+            <!-- Total Experience & Stats -->
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <h4>6+</h4>
+                    <span>Years Exp.</span>
+                </div>
+                <div class="stat-item">
+                    <h4>15+</h4>
+                    <span>Projects</span>
+                </div>
+                <div class="stat-item">
+                    <h4>2</h4>
+                    <span>Positions</span>
+                </div>
             </div>
 
-            <!-- Mobile Controls -->
-            <div class="mobile-controls">
-                <button id="theme-toggle-mobile" class="theme-btn" aria-label="Toggle Dark Mode">
-                    <i data-lucide="sun" class="sun-icon"></i>
-                    <i data-lucide="moon" class="moon-icon"></i>
-                </button>
-                <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Open Mobile Menu">
-                    <i data-lucide="menu" id="menu-icon"></i>
-                </button>
+            <div class="cta-group">
+                <a href="mailto:tuhinh02@gmail.com" class="btn btn-primary">
+                    <i data-lucide="mail"></i> Contact Me
+                </a>
+                <a href="https://github.com/mdmhtuhin" target="_blank" rel="noopener noreferrer" class="btn btn-outline" aria-label="View GitHub Profile">
+                    <i data-lucide="github"></i> GitHub
+                </a>
+                <a href="https://linkedin.com/in/tuhinh" target="_blank" rel="noopener noreferrer" class="btn btn-outline" aria-label="View LinkedIn Profile">
+                    <i data-lucide="linkedin"></i> LinkedIn
+                </a>
             </div>
         </div>
 
-        <!-- Mobile Menu Dropdown -->
-        <div id="mobile-menu" class="mobile-menu-dropdown hidden">
-            <a href="#home" class="mobile-link">Home</a>
-            <a href="#about" class="mobile-link">About</a>
-            <a href="#skills" class="mobile-link">Skills</a>
-            <a href="#projects" class="mobile-link">Projects</a>
-            <a href="#experience" class="mobile-link">Experience</a>
-            <a href="#contact" class="mobile-link">Contact</a>
-        </div>
-    </nav>
+        <!-- Abstract Carousel Visual -->
+        <div class="carousel-container">
+            <div class="glow-bg"></div>
 
-    <!-- Hero Section -->
-    <section id="home" class="reveal-on-scroll">
-        <div class="container hero-grid">
-            <!-- Text Content -->
-            <div class="hero-text">
-                <div class="badge">Software Engineer & Backend Specialist</div>
-                <h1>
-                    Md Mehedi Hasan <span class="text-red">Tuhin</span>
-                </h1>
+            <!-- Card 1 -->
+            <div id="card-1" class="code-card card-pos-center">
+                <div class="window-controls">
+                    <div class="dot dot-red"></div>
+                    <div class="dot dot-yellow"></div>
+                    <div class="dot dot-green"></div>
+                </div>
+                <div class="code-content">
+                    <p><span class="text-red">class</span> <span class="text-yellow">Developer</span> <span class="text-red">&lt;</span> <span class="text-yellow">ApplicationRecord</span></p>
+                    <p class="pl-4"><span class="text-red">def</span> <span class="text-blue">initialize</span></p>
+                    <p class="pl-8">@stack = [<span class="text-yellow">'React Native'</span>, <span class="text-yellow">'Vue.js'</span>, <span class="text-red">'Ruby on Rails'</span>]</p>
+                    <p class="pl-8">@passion = <span class="text-red">'Scalable Architecture'</span></p>
+                    <p class="pl-8">@location = <span class="text-red">'Dhaka, Bangladesh'</span></p>
+                    <p class="pl-4"><span class="text-red">end</span></p>
+                    <p class="pl-4"><span class="text-red">def</span> <span class="text-blue">mission</span></p>
+                    <p class="pl-8"><span class="text-yellow">build_robust_systems!</span></p>
+                    <p class="pl-4"><span class="text-red">end</span></p>
+                    <p><span class="text-red">end</span></p>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div id="card-2" class="code-card card-pos-right">
+                <div class="window-controls">
+                    <div class="dot dot-red"></div>
+                    <div class="dot dot-yellow"></div>
+                    <div class="dot dot-green"></div>
+                </div>
+                <div class="code-content">
+                    <p><span class="text-blue">export default</span> {</p>
+                    <p class="pl-4">data() {</p>
+                    <p class="pl-8"><span class="text-red">return</span> {</p>
+                    <p class="pl-12">ui: <span class="text-yellow">'Vue.js'</span>,</p>
+                    <p class="pl-12">app: <span class="text-yellow">'React Native'</span>,</p>
+                    <p class="pl-8">}</p>
+                    <p class="pl-4">}</p>
+                    <p>}</p>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div id="card-3" class="code-card card-pos-left">
+                <div class="window-controls">
+                    <div class="dot dot-red"></div>
+                    <div class="dot dot-yellow"></div>
+                    <div class="dot dot-green"></div>
+                </div>
+                <div class="code-content">
+                    <p>{</p>
+                    <p class="pl-4">"database": <span class="text-yellow">"PostgreSQL"</span>,</p>
+                    <p class="pl-4">"caching": <span class="text-yellow">"Redis"</span>,</p>
+                    <p class="pl-4">"queue": <span class="text-yellow">"Sidekiq"</span>,</p>
+                    <p class="pl-4">"deploy": <span class="text-yellow">"AWS EC2"</span></p>
+                    <p>}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="section-padding bg-alt reveal-on-scroll">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-number">01.</span>
+            <h2 class="section-title">About Me</h2>
+        </div>
+        <div class="about-grid">
+            <div class="about-text">
                 <p>
-                    Architecting scalable backend solutions with <span class="text-red" style="font-weight: 600">Ruby on Rails</span> and building dynamic mobile & web apps with <span class="text-yellow" style="font-weight: 600">React Native & Vue.js</span>. I turn complex logic into clean code.
+                    Hello! I'm Tuhin, a passionate Software Engineer based in Dhaka. My journey in tech started back in 2019, and I've evolved into a full-stack developer who loves the elegance of <strong class="text-red">Ruby</strong> and the dynamic power of <strong class="text-yellow">JavaScript</strong>.
                 </p>
-
-                <!-- Total Experience & Stats -->
-                <div class="hero-stats">
-                    <div class="stat-item">
-                        <h4>6+</h4>
-                        <span>Years Exp.</span>
-                    </div>
-                    <div class="stat-item">
-                        <h4>15+</h4>
-                        <span>Projects</span>
-                    </div>
-                    <div class="stat-item">
-                        <h4>2</h4>
-                        <span>Positions</span>
-                    </div>
-                </div>
-
-                <div class="cta-group">
-                    <a href="mailto:tuhinh02@gmail.com" class="btn btn-primary">
-                        <i data-lucide="mail"></i> Contact Me
-                    </a>
-                    <a href="https://github.com/mdmhtuhin" target="_blank" rel="noopener noreferrer" class="btn btn-outline" aria-label="View GitHub Profile">
-                        <i data-lucide="github"></i> GitHub
-                    </a>
-                    <a href="https://linkedin.com/in/tuhinh" target="_blank" rel="noopener noreferrer" class="btn btn-outline" aria-label="View LinkedIn Profile">
-                        <i data-lucide="linkedin"></i> LinkedIn
-                    </a>
+                <p>
+                    Currently, I work at <span class="text-red" style="font-weight:600">Syftet Limited</span>, handling the complete development cycle—from requirement analysis to deployment. I specialize in building high-traffic applications like real-time chat communities and large-scale educational platforms.
+                </p>
+                <p>
+                    I don't just write code; I solve problems. Whether it's optimizing a PostgreSQL query, managing game states, or architecting a broadcast server, I thrive on technical challenges.
+                </p>
+            </div>
+            <div class="location-wrapper">
+                <div class="location-card">
+                    <i data-lucide="map-pin" class="text-red" style="width: 48px; height: 48px; margin-bottom: 1rem;"></i>
+                    <h3 style="font-size: 1.25rem; font-weight: 700; margin-bottom: 0.5rem;">Dhaka, Bangladesh</h3>
+                    <p class="text-muted" style="color: var(--text-muted)">Available for remote work & challenging leadership roles.</p>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- About Section -->
-    <section id="about" class="section">
-        <div class="container">
-            <div class="section-title">
-                <h2>About Me</h2>
-                <p>Get to know me better</p>
-            </div>
-            
-            <div class="about-content">
-                <div class="about-image zoom-effect">
-                    <img src="/assets/images/poster.jpg" alt="About Md Mehedi Hasan Tuhin" class="floating">
-                </div>
-                
-                <div class="about-text">
-                    <h3>I develop applications that solve real-world problems.</h3>
-                    <p>I'm a passionate Software Engineer with a focus on creating robust, scalable web applications. With over 4 years of experience in the industry, I've worked on various projects from chat applications to educational platforms.</p>
-                    <p>My approach combines technical expertise with problem-solving skills to deliver solutions that not only meet requirements but also exceed expectations in performance and user experience.</p>
-                    
-                    <div class="about-features">
-                        <div class="feature-item">
-                            <div class="feature-icon">
-                                <i class="fas fa-server"></i>
-                            </div>
-                            <div class="feature-content">
-                                <h4>Backend Development</h4>
-                                <p>Building robust APIs and server logic</p>
-                            </div>
-                        </div>
-                        
-                        <div class="feature-item">
-                            <div class="feature-icon">
-                                <i class="fas fa-desktop"></i>
-                            </div>
-                            <div class="feature-content">
-                                <h4>Frontend Development</h4>
-                                <p>Creating responsive and interactive UIs</p>
-                            </div>
-                        </div>
-                        
-                        <div class="feature-item">
-                            <div class="feature-icon">
-                                <i class="fas fa-database"></i>
-                            </div>
-                            <div class="feature-content">
-                                <h4>Database Management</h4>
-                                <p>Designing and optimizing database systems</p>
-                            </div>
-                        </div>
-                        
-                        <div class="feature-item">
-                            <div class="feature-icon">
-                                <i class="fas fa-gamepad"></i>
-                            </div>
-                            <div class="feature-content">
-                                <h4>Game Logic</h4>
-                                <p>Developing complex game mechanics</p>
-                            </div>
-                        </div>
+<!-- Skills Section -->
+<section id="skills" class="section-padding reveal-on-scroll">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-number">02.</span>
+            <h2 class="section-title">Technical Stack</h2>
+        </div>
+
+        <div class="skills-grid">
+            <!-- Backend -->
+            <div class="skill-card">
+                <div class="skill-header">
+                    <div class="icon-box icon-red">
+                        <i data-lucide="server"></i>
                     </div>
-                    
-                    <a href="#contact" class="btn"><i class="fas fa-paper-plane"></i> Hire Me</a>
+                    <h3 style="font-size: 1.25rem; font-weight: 700;">Backend (Rails)</h3>
                 </div>
+                <ul class="skill-list">
+                    <li><i data-lucide="chevron-right" class="chevron"></i> Ruby</li>
+                    <li><i data-lucide="chevron-right" class="chevron"></i> Ruby on Rails</li>
+                    <li><i data-lucide="chevron-right" class="chevron"></i> PostgreSQL & MySQL</li>
+                    <li><i data-lucide="chevron-right" class="chevron"></i> RabbitMQ (Broadcasting)</li>
+                    <li><i data-lucide="chevron-right" class="chevron"></i> RESTful API Design</li>
+                </ul>
+            </div>
+
+            <!-- Frontend -->
+            <div class="skill-card">
+                <div class="skill-header">
+                    <div class="icon-box icon-yellow">
+                        <i data-lucide="code"></i>
+                    </div>
+                    <h3 style="font-size: 1.25rem; font-weight: 700;">Frontend & Mobile</h3>
+                </div>
+                <ul class="skill-list">
+                    <li><i data-lucide="chevron-right" class="chevron text-yellow"></i> JavaScript (ES6+)</li>
+                    <li><i data-lucide="chevron-right" class="chevron text-yellow"></i> React Native (Mobile)</li>
+                    <li><i data-lucide="chevron-right" class="chevron text-yellow"></i> Vue.js (Vue 3, Router)</li>
+                    <li><i data-lucide="chevron-right" class="chevron text-yellow"></i> HTML5 & CSS3</li>
+                    <li><i data-lucide="chevron-right" class="chevron text-yellow"></i> Bootstrap & Tailwind</li>
+                </ul>
+            </div>
+
+            <!-- Tools -->
+            <div class="skill-card">
+                <div class="skill-header">
+                    <div class="icon-box icon-neutral">
+                        <i data-lucide="terminal"></i>
+                    </div>
+                    <h3 style="font-size: 1.25rem; font-weight: 700;">Tools & Deployment</h3>
+                </div>
+                <ul class="skill-list">
+                    <li><i data-lucide="chevron-right" class="chevron" style="color: var(--text-muted)"></i> Git & GitHub</li>
+                    <li><i data-lucide="chevron-right" class="chevron" style="color: var(--text-muted)"></i> AWS (EC2, S3 Basics)</li>
+                    <li><i data-lucide="chevron-right" class="chevron" style="color: var(--text-muted)"></i> RSpec (Testing)</li>
+                    <li><i data-lucide="chevron-right" class="chevron" style="color: var(--text-muted)"></i> Agile / Scrum</li>
+                    <li><i data-lucide="chevron-right" class="chevron" style="color: var(--text-muted)"></i> Linux Environment</li>
+                </ul>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="section" style="background-color: var(--light);">
-        <div class="container">
-            <div class="section-title">
-                <h2>My Skills</h2>
-                <p>What I excel at</p>
+<!-- Projects Section -->
+<section id="projects" class="section-padding bg-alt reveal-on-scroll">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-number">03.</span>
+            <h2 class="section-title">Featured Projects</h2>
+        </div>
+
+        <div class="projects-stack">
+            <!-- Project 1 -->
+            <article class="project-item">
+                <div class="project-content">
+                    <div class="project-label text-red">Social Platform (Backend)</div>
+                    <h3 style="font-size: 1.8rem; font-weight: 700;">iNwe Global Chat Community</h3>
+                    <div class="project-desc-card border-l-accent">
+                        <p>
+                            A comprehensive mobile internet-based chat community with a virtual economy and live gaming. I developed the backend API and game logic to support user profiles, private/public rooms, and real-time virtual gifting.
+                        </p>
+                    </div>
+                    <div class="tech-tags">
+                        <span class="text-red">Ruby on Rails</span>
+                        <span class="text-red">PostgreSQL</span>
+                        <span class="text-red">RabbitMQ</span>
+                        <span class="text-red">AASM</span>
+                    </div>
+                    <div style="margin-top: 1.5rem;">
+                        <a href="https://inweapp.com/" target="_blank" rel="noopener noreferrer" class="btn btn-outline" style="padding: 0.5rem 1rem; font-size: 0.875rem;">
+                            <i data-lucide="external-link" style="width: 16px; height: 16px;"></i> View Live Project
+                        </a>
+                    </div>
+                </div>
+                <div class="project-visual">
+                    <img src="assets/images/inwe_web.png" alt="iNwe Global Chat Community Interface" class="project-img" loading="lazy">
+                </div>
+            </article>
+
+            <!-- Project 2 -->
+            <article class="project-item">
+                <div class="project-visual desktop-order-1">
+                    <img src="/assets/images/bcs_prostuti.png" alt="BCS Prostuti Landing Page" class="project-img" loading="lazy">
+                </div>
+                <div class="project-content desktop-text-right desktop-order-2">
+                    <div class="project-label text-yellow">EdTech Platform (Mobile/Web)</div>
+                    <h3 style="font-size: 1.8rem; font-weight: 700;">BCS Prostuti</h3>
+                    <div class="project-desc-card border-l-accent desktop-border-r">
+                        <p>
+                            An educational platform serving 60,000+ questions for government job aspirants. I led the frontend development, building a responsive Single Page Application (SPA) and contributing to mobile features for real-time exam simulations.
+                        </p>
+                    </div>
+                    <div class="tech-tags desktop-justify-end">
+                        <span class="text-yellow">React Native</span>
+                        <span class="text-yellow">Vue 3</span>
+                        <span class="text-yellow">JavaScript</span>
+                        <span class="text-yellow">REST API</span>
+                    </div>
+                    <div style="margin-top: 1.5rem;">
+                        <a href="https://www.bcsprostuti.com/" target="_blank" rel="noopener noreferrer" class="btn btn-outline" style="padding: 0.5rem 1rem; font-size: 0.875rem;">
+                            <i data-lucide="external-link" style="width: 16px; height: 16px;"></i> View Live Project
+                        </a>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+
+<!-- Experience Section -->
+<section id="experience" class="section-padding reveal-on-scroll">
+    <div class="container">
+        <div class="section-header" style="justify-content: center;">
+            <span class="section-number">04.</span>
+            <h2 class="section-title">Experience</h2>
+        </div>
+
+        <div class="timeline">
+            <!-- Role 1 -->
+            <div class="timeline-item">
+                <div class="timeline-dot" style="background-color: var(--brand-red); box-shadow: 0 0 0 4px var(--brand-red-dim);"></div>
+                <h3 style="font-size: 1.25rem; font-weight: 700;">Software Engineer</h3>
+                <div class="timeline-date">
+                    <span class="text-red">Syftet Limited</span>
+                    <span>•</span>
+                    <span>Jan 2020 - Present</span>
+                </div>
+                <ul class="timeline-list">
+                    <li>Lead the development of backend APIs and frontend interfaces for client projects.</li>
+                    <li>Analyze requirements and architect scalable solutions for high-traffic applications.</li>
+                    <li>Perform rigorous testing and debugging to ensure 99.9% uptime.</li>
+                </ul>
             </div>
-            
-            <div class="skills-container">
-                <div class="skill-category">
-                    <h3><i class="fas fa-code"></i> Programming Languages</h3>
-                    
-                    <div class="skill-item">
-                        <div class="skill-header">
-                            <span>Ruby</span>
-                            <span>90%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 90%;"></div>
-                        </div>
-                    </div>
-                    
-                    <div class="skill-item">
-                        <div class="skill-header">
-                            <span>JavaScript</span>
-                            <span>85%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 85%;"></div>
-                        </div>
-                    </div>
-                    
-                    <div class="skill-item">
-                        <div class="skill-header">
-                            <span>HTML/CSS</span>
-                            <span>80%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 80%;"></div>
-                        </div>
-                    </div>
+
+            <!-- Role 2 -->
+            <div class="timeline-item">
+                <div class="timeline-dot" style="background-color: var(--text-muted);"></div>
+                <h3 style="font-size: 1.25rem; font-weight: 700;">Software Engineer (Intern)</h3>
+                <div class="timeline-date">
+                    <span>Sytet Ltd</span>
+                    <span>•</span>
+                    <span>Aug 2019 - Dec 2019</span>
                 </div>
-                
-                <div class="skill-category">
-                    <h3><i class="fas fa-layer-group"></i> Frameworks & Libraries</h3>
-                    
-                    <div class="skill-item">
-                        <div class="skill-header">
-                            <span>Ruby on Rails</span>
-                            <span>90%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 90%;"></div>
-                        </div>
-                    </div>
-                    
-                    <div class="skill-item">
-                        <div class="skill-header">
-                            <span>Vue.js</span>
-                            <span>80%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 80%;"></div>
-                        </div>
-                    </div>
-                    
-                    <div class="skill-item">
-                        <div class="skill-header">
-                            <span>jQuery</span>
-                            <span>75%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 75%;"></div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="skill-category">
-                    <h3><i class="fas fa-database"></i> Database & Tools</h3>
-                    
-                    <div class="skill-item">
-                        <div class="skill-header">
-                            <span>PostgreSQL</span>
-                            <span>85%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 85%;"></div>
-                        </div>
-                    </div>
-                    
-                    <div class="skill-item">
-                        <div class="skill-header">
-                            <span>MySQL</span>
-                            <span>80%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 80%;"></div>
-                        </div>
-                    </div>
-                    
-                    <div class="skill-item">
-                        <div class="skill-header">
-                            <span>Git/GitHub</span>
-                            <span>90%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 90%;"></div>
-                        </div>
-                    </div>
-                    
-                    <div class="skill-item">
-                        <div class="skill-header">
-                            <span>AWS</span>
-                            <span>70%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 70%;"></div>
-                        </div>
-                    </div>
-                </div>
+                <p style="color: var(--text-muted)">
+                    Gained foundational experience in Ruby on Rails development and professional software engineering workflows.
+                </p>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Experience Section -->
-    <section id="experience" class="section">
-        <div class="container">
-            <div class="section-title">
-                <h2>My Experience</h2>
-                <p>My professional journey</p>
-            </div>
-            
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <div class="timeline-date">2020 - Present</div>
-                        <h3 class="timeline-title">Software Engineer</h3>
-                        <p class="timeline-desc"><a href="https://syftet.com" target="_blank" class="company-link">Syftet Limited</a> - Bangladesh</p>
-                        <p class="timeline-desc">Requirement analysis, Design, Development, Testing, and deployment. Add new features, and bug fixing as per client requirements.</p>
-                    </div>
-                </div>
-                
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <div class="timeline-date">2019 - 2020</div>
-                        <h3 class="timeline-title">Software Engineer (Intern)</h3>
-                        <p class="timeline-desc"><a href="https://syftet.com" target="_blank" class="company-link">Syftet Ltd</a> - Bangladesh</p>
-                        <p class="timeline-desc">Internship focused on understanding and learning software development practices and technologies.</p>
-                    </div>
-                </div>
-            </div>
+<!-- Contact Section -->
+<section id="contact" class="contact-section reveal-on-scroll">
+    <div class="container">
+        <p class="font-mono text-yellow" style="margin-bottom: 1rem;">05. What's Next?</p>
+        <h2 style="font-size: 2.5rem; font-weight: 700; margin-bottom: 1.5rem;">Get In Touch</h2>
+        <p style="font-size: 1.25rem; color: var(--text-muted); max-width: 600px; margin: 0 auto 2.5rem auto;">
+            I am actively looking for new opportunities and leadership positions. Whether you have a question or just want to say hi, my inbox is always open.
+        </p>
+        <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+            <a href="mailto:tuhinh02@gmail.com" class="contact-btn" aria-label="Email Me">
+                <i data-lucide="mail"></i> Email Me
+            </a>
+            <a href="https://wa.me/8801753583954" target="_blank" rel="noopener noreferrer" class="contact-btn" aria-label="Message on WhatsApp">
+                <i data-lucide="message-circle"></i> WhatsApp
+            </a>
         </div>
-    </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="section" style="background-color: var(--light);">
-        <div class="container">
-            <div class="section-title">
-                <h2>My Projects</h2>
-                <p>Recent work</p>
+        <footer>
+            <p>Designed & Built by Md Mehedi Hasan Tuhin</p>
+            <div class="social-links">
+                <a href="https://github.com/mdmhtuhin" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i data-lucide="github"></i></a>
+                <a href="https://linkedin.com/in/tuhinh" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+                <a href="https://www.facebook.com/mehedihasan.tuhin2" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i data-lucide="facebook"></i></a>
+                <a href="https://x.com/mdmhtuhin" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i data-lucide="twitter"></i></a>
+                <a href="https://wa.me/8801753583954" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i data-lucide="message-circle"></i></a>
             </div>
-            
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="/assets/images/inwe_web.png" alt="iNwe Chat Application">
-                        <div class="project-overlay">
-                            <div class="project-actions">
-                                <a href="https://inweapp.com/" class="project-action"><i class="fas fa-eye"></i></a>
-                                <a href="https://inweapp.com/" class="project-action"><i class="fas fa-link"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3>iNwe - Global Chat Community</h3>
-                        <p>A global mobile internet-based chat community with features like messaging, virtual gifts, live games, and advanced profile systems. Developed APIs and game logic using Ruby on Rails.</p>
-                        <div class="project-tags">
-                            <span class="project-tag">Ruby on Rails</span>
-                            <span class="project-tag">PostgreSQL</span>
-                            <span class="project-tag">RabbitMQ</span>
-                        </div>
-                        <a href="https://inweapp.com/" class="btn">View Project</a>
-                    </div>
-                </div>
-                
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="/assets/images/bcs_prostuti.png" alt="BCS Prostuti">
-                        <div class="project-overlay">
-                            <div class="project-actions">
-                                <a href="https://www.bcsprostuti.com/" class="project-action"><i class="fas fa-eye"></i></a>
-                                <a href="https://www.bcsprostuti.com/" class="project-action"><i class="fas fa-link"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3>BCS Prostuti</h3>
-                        <p>A comprehensive educational website and app for BCS Preliminary exam preparation with over 60,000+ questions. Developed frontend using Vue.js and Bootstrap.</p>
-                        <div class="project-tags">
-                            <span class="project-tag">Vue.js</span>
-                            <span class="project-tag">JavaScript</span>
-                            <span class="project-tag">Bootstrap</span>
-                        </div>
-                        <a href="https://www.bcsprostuti.com/" class="btn">View Project</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+        </footer>
+    </div>
+</section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="section" style="background-color: var(--light);">
-        <div class="container">
-            <div class="section-title">
-                <h2>Let's Work Together</h2>
-                <p>Ready to start your project? Let's discuss how I can help bring your ideas to life.</p>
-            </div>
-            
-            <div class="contact-grid">
-                <!-- Main Contact Card -->
-                <div class="contact-main-card">
-                    <div class="contact-avatar">
-                        <img src="/assets/images/tuhin.png" alt="Md Mehedi Hasan Tuhin">
-                        <div class="status-indicator"></div>
-                    </div>
-                    <h3>Md Mehedi Hasan Tuhin</h3>
-                    <p class="contact-title">Software Engineer</p>
-                    <p class="contact-bio">Available for freelance projects and full-time opportunities. Specializing in Ruby on Rails and Vue.js development.</p>
-                    
-                    <div class="contact-actions">
-                        <a href="mailto:tuhinh02@gmail.com" class="btn btn-primary">
-                            <i class="fas fa-envelope"></i>
-                            <span class="btn-text">Email Me</span>
-                        </a>
-                        <a href="tel:+8801753583954" class="btn btn-outline">
-                            <i class="fas fa-phone"></i>
-                            <span>Call Me</span>
-                        </a>
-                    </div>
-                    
-                    <div class="social-links-main">
-                        <a href="https://www.linkedin.com/in/tuhinh/" class="social-link-main linkedin" target="_blank">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                        <a href="https://github.com/mdmhtuhin" class="social-link-main github" target="_blank">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a href="https://www.facebook.com/mehedihasan.tuhin2" class="social-link-main facebook" target="_blank">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                    </div>
-                </div>
-                
-                <!-- Contact Info Cards -->
-                <div class="contact-info-grid">
-                    <div class="contact-info-card">
-                        <div class="contact-info-icon">
-                            <i class="fas fa-map-marker-alt"></i>
-                        </div>
-                        <h4>Location</h4>
-                        <p>Dhaka, Bangladesh</p>
-                        <span class="contact-info-meta">GMT+6 Timezone</span>
-                    </div>
-                    
-                    <div class="contact-info-card">
-                        <div class="contact-info-icon">
-                            <i class="fas fa-clock"></i>
-                        </div>
-                        <h4>Response Time</h4>
-                        <p>Within 24 hours</p>
-                        <span class="contact-info-meta">Usually much faster</span>
-                    </div>
-                    
-                    <div class="contact-info-card">
-                        <div class="contact-info-icon">
-                            <i class="fas fa-briefcase"></i>
-                        </div>
-                        <h4>Availability</h4>
-                        <p>Open to projects</p>
-                        <span class="contact-info-meta">Freelance & Full-time</span>
-                    </div>
-                    
-                    <div class="contact-info-card">
-                        <div class="contact-info-icon">
-                            <i class="fas fa-language"></i>
-                        </div>
-                        <h4>Languages</h4>
-                        <p>English, Bengali</p>
-                        <span class="contact-info-meta">Fluent communication</span>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Contact CTA -->
-            <div class="contact-cta">
-                <h3>Ready to start your project?</h3>
-                <p>Whether you have a clear vision or just an idea, I'm here to help you turn it into reality.</p>
-                <div class="cta-buttons">
-                    <a href="mailto:tuhinh02@gmail.com?subject=Project Inquiry" class="btn btn-primary btn-lg">
-                        <i class="fas fa-rocket"></i> Start a Project
-                    </a>
-                    <a href="mailto:tuhinh02@gmail.com?subject=General Inquiry" class="btn btn-outline btn-lg">
-                        <i class="fas fa-comments"></i> Just Say Hi
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-main">
-                    <div class="footer-brand">
-                        <h3>Md Mehedi Hasan <span>Tuhin</span></h3>
-                        <p>Full-stack software engineer specializing in Ruby on Rails, Vue.js, and scalable web applications. Transforming ideas into robust digital solutions.</p>
-                    </div>
-                    <div class="footer-links">
-                        <a href="#about">About</a>
-                        <a href="#skills">Skills</a>
-                        <a href="#experience">Experience</a>
-                        <a href="#projects">Projects</a>
-                        <a href="#contact">Contact</a>
-                    </div>
-                </div>
-                
-                <div class="footer-divider"></div>
-                
-                <div class="footer-bottom">
-                    <div class="footer-contact">
-                        <a href="mailto:tuhinh02@gmail.com" class="contact-link">
-                            <i class="fas fa-envelope"></i>
-                            tuhinh02@gmail.com
-                        </a>
-                        <span class="contact-separator">•</span>
-                        <a href="tel:+8801753583954" class="contact-link">
-                            <i class="fas fa-phone"></i>
-                            +880 1753 583954
-                        </a>
-                    </div>
-                    
-                    <div class="footer-social">
-                        <a href="https://www.linkedin.com/in/tuhinh/" class="social-link" target="_blank" aria-label="LinkedIn">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                        <a href="https://github.com/mdmhtuhin" class="social-link" target="_blank" aria-label="GitHub">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a href="https://www.facebook.com/mehedihasan.tuhin2" class="social-link" target="_blank" aria-label="Facebook">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                    </div>
-                    
-                    <div class="footer-copyright">
-                        <p>&copy; 2025 Md Mehedi Hasan Tuhin. All rights reserved.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-        
     <!-- External JavaScript -->
     <script src="/assets/js/script.js"></script>
 </body>
