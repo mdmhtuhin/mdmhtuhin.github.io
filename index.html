@@ -31,6 +31,12 @@
     <link rel="icon" type="image/png" href="assets/images/nem_logo.png">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="theme-color" content="#ffffff">
+    <meta name="color-scheme" content="light dark">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="assets/images/favicon.png" type="image/png">
+
     <!-- JSON-LD Structured Data for SEO -->
     <script type="application/ld+json">
         {
@@ -58,14 +64,6 @@
     <script src="https://unpkg.com/lucide@latest"></script>
     <!-- Stylesheet -->
     <link rel="stylesheet" href="assets/css/stylesheet.css">
-    <script>
-        // Inline script to set theme immediately to prevent flash
-        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-            document.documentElement.classList.add('dark')
-        } else {
-            document.documentElement.classList.remove('dark')
-        }
-    </script>
 </head>
 <body>
 
@@ -74,7 +72,7 @@
     <div class="container nav-inner">
         <!-- Logo -->
         <a href="#home" class="logo" aria-label="Md Mehedi Hasan Tuhin Portfolio Home">
-            <img src="assets/images/nem_logo.png" width="100" height="30" alt="NEM Logo" class="nem-logo" loading="lazy" />
+            <img src="assets/images/nem_logo.png" width="100" height="30" alt="NEM Logo" class="nem-logo" loading="eager" decoding="async" fetchpriority="high" />
         </a>
 
         <!-- Desktop Menu -->
@@ -119,7 +117,6 @@
 <!-- Hero Section -->
 <section id="home" class="reveal-on-scroll">
     <div class="container hero-grid">
-        <!-- Text Content -->
         <div class="hero-text">
             <div class="badge">Software Engineer & Backend Specialist</div>
             <h1>
@@ -128,8 +125,12 @@
             <p>
                 Architecting scalable backend solutions with <span class="text-red" style="font-weight: 600">Ruby on Rails</span> and building dynamic mobile & web apps with <span class="text-yellow" style="font-weight: 600">React Native & Vue.js</span>. I turn complex logic into clean code.
             </p>
+            <div class="hero-chip-row" role="list">
+                <span class="hero-chip" role="listitem">Backend Architecture</span>
+                <span class="hero-chip" role="listitem">Realtime Systems</span>
+                <span class="hero-chip" role="listitem">Technical Leadership</span>
+            </div>
 
-            <!-- Total Experience & Stats -->
             <div class="hero-stats">
                 <div class="stat-item">
                     <h4>6+</h4>
@@ -155,6 +156,26 @@
                 <a href="https://linkedin.com/in/tuhinh" target="_blank" rel="noopener noreferrer" class="btn btn-outline" aria-label="View LinkedIn Profile">
                     <i data-lucide="linkedin"></i> LinkedIn
                 </a>
+            </div>
+
+            <div class="hero-insights-grid">
+                <article class="hero-card hero-stack-card">
+                    <div class="card-label">Core Stack</div>
+                    <ul class="hero-stack-list">
+                        <li>Rails APIs + Hotwire</li>
+                        <li>Vue 3 / React Native</li>
+                        <li>PostgreSQL · Redis · Sidekiq</li>
+                        <li>AWS EC2 · Docker</li>
+                    </ul>
+                </article>
+                <article class="hero-card hero-availability-card">
+                    <div class="card-label">Availability</div>
+                    <p>Open to senior backend roles, technical leadership, and consulting engagements.</p>
+                    <div class="hero-availability-status">
+                        <span class="status-dot" aria-hidden="true"></span>
+                        Accepting new challenges in Q1 2026
+                    </div>
+                </article>
             </div>
         </div>
 
@@ -219,6 +240,10 @@
                 </div>
             </div>
         </div>
+    </div>
+    <div class="scroll-indicator" aria-hidden="true">
+        <span>Scroll</span>
+        <div class="scroll-track"><span class="scroll-thumb"></span></div>
     </div>
 </section>
 
@@ -334,11 +359,15 @@
                             A comprehensive mobile internet-based chat community with a virtual economy and live gaming. I developed the backend API and game logic to support user profiles, private/public rooms, and real-time virtual gifting.
                         </p>
                     </div>
-                    <div class="tech-tags">
-                        <span class="text-red">Ruby on Rails</span>
-                        <span class="text-red">PostgreSQL</span>
-                        <span class="text-red">RabbitMQ</span>
-                        <span class="text-red">AASM</span>
+                    <div class="project-meta">
+                        <div class="project-meta-item">
+                            <i data-lucide="activity"></i>
+                            <span>1M+ monthly actions</span>
+                        </div>
+                        <div class="project-meta-item">
+                            <i data-lucide="shield"></i>
+                            <span>99.95% uptime SLA</span>
+                        </div>
                     </div>
                     <div style="margin-top: 1.5rem;">
                         <a href="https://inweapp.com/" target="_blank" rel="noopener noreferrer" class="btn btn-outline" style="padding: 0.5rem 1rem; font-size: 0.875rem;">
@@ -354,7 +383,7 @@
             <!-- Project 2 -->
             <article class="project-item">
                 <div class="project-visual desktop-order-1">
-                    <img src="/assets/images/bcs_prostuti.png" alt="BCS Prostuti Landing Page" class="project-img" loading="lazy">
+                    <img src="assets/images/bcs_prostuti.png" alt="BCS Prostuti Landing Page" class="project-img" loading="lazy">
                 </div>
                 <div class="project-content desktop-text-right desktop-order-2">
                     <div class="project-label text-yellow">EdTech Platform (Mobile/Web)</div>
@@ -364,11 +393,15 @@
                             An educational platform serving 60,000+ questions for government job aspirants. I led the frontend development, building a responsive Single Page Application (SPA) and contributing to mobile features for real-time exam simulations.
                         </p>
                     </div>
-                    <div class="tech-tags desktop-justify-end">
-                        <span class="text-yellow">React Native</span>
-                        <span class="text-yellow">Vue 3</span>
-                        <span class="text-yellow">JavaScript</span>
-                        <span class="text-yellow">REST API</span>
+                    <div class="project-meta desktop-justify-end">
+                        <div class="project-meta-item">
+                            <i data-lucide="layers"></i>
+                            <span>60k+ curated questions</span>
+                        </div>
+                        <div class="project-meta-item">
+                            <i data-lucide="smartphone"></i>
+                            <span>Dual Web & Mobile launch</span>
+                        </div>
                     </div>
                     <div style="margin-top: 1.5rem;">
                         <a href="https://www.bcsprostuti.com/" target="_blank" rel="noopener noreferrer" class="btn btn-outline" style="padding: 0.5rem 1rem; font-size: 0.875rem;">
@@ -426,35 +459,55 @@
 <!-- Contact Section -->
 <section id="contact" class="contact-section reveal-on-scroll">
     <div class="container">
-        <p class="font-mono text-yellow" style="margin-bottom: 1rem;">05. What's Next?</p>
-        <h2 style="font-size: 2.5rem; font-weight: 700; margin-bottom: 1.5rem;">Get In Touch</h2>
-        <p style="font-size: 1.25rem; color: var(--text-muted); max-width: 600px; margin: 0 auto 2.5rem auto;">
-            I am actively looking for new opportunities and leadership positions. Whether you have a question or just want to say hi, my inbox is always open.
-        </p>
-        <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
-            <a href="mailto:tuhinh02@gmail.com" class="contact-btn" aria-label="Email Me">
-                <i data-lucide="mail"></i> Email Me
-            </a>
-            <a href="https://wa.me/8801753583954" target="_blank" rel="noopener noreferrer" class="contact-btn" aria-label="Message on WhatsApp">
-                <i data-lucide="message-circle"></i> WhatsApp
-            </a>
-        </div>
-
-        <footer>
-            <p>Designed & Built by Md Mehedi Hasan Tuhin</p>
-            <div class="social-links">
-                <a href="https://github.com/mdmhtuhin" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i data-lucide="github"></i></a>
-                <a href="https://linkedin.com/in/tuhinh" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
-                <a href="https://www.facebook.com/mehedihasan.tuhin2" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i data-lucide="facebook"></i></a>
-                <a href="https://x.com/mdmhtuhin" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i data-lucide="twitter"></i></a>
-                <a href="https://wa.me/8801753583954" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i data-lucide="message-circle"></i></a>
+        <div class="contact-card">
+            <p class="font-mono text-yellow" style="margin-bottom: 1rem;">05. What's Next?</p>
+            <h2 style="font-size: 2.5rem; font-weight: 700; margin-bottom: 1.5rem;">Get In Touch</h2>
+            <p style="font-size: 1.25rem; color: var(--text-muted); max-width: 600px; margin: 0 auto 2.5rem auto;">
+                I am actively looking for new opportunities and leadership positions. Whether you have a question or just want to say hi, my inbox is always open.
+            </p>
+            <div class="contact-actions">
+                <a href="mailto:tuhinh02@gmail.com" class="contact-btn" aria-label="Email Me">
+                    <i data-lucide="mail"></i> Email Me
+                </a>
+                <a href="https://wa.me/8801753583954" target="_blank" rel="noopener noreferrer" class="contact-btn" aria-label="Message on WhatsApp">
+                    <i data-lucide="message-circle"></i> WhatsApp
+                </a>
             </div>
-        </footer>
+            <div class="contact-meta">
+                <div class="contact-meta-item">
+                    <span class="contact-meta-label">Response time</span>
+                    <span class="contact-meta-value"><i data-lucide="timer"></i> &lt; 24 hrs</span>
+                </div>
+                <div class="contact-meta-item">
+                    <span class="contact-meta-label">Timezone</span>
+                    <span class="contact-meta-value"><i data-lucide="globe"></i> Dhaka (UTC+6)</span>
+                </div>
+                <div class="contact-meta-item">
+                    <span class="contact-meta-label">Preferred</span>
+                    <span class="contact-meta-value"><i data-lucide="handshake"></i> Remote & Hybrid</span>
+                </div>
+            </div>
+
+            <footer>
+                <p>Designed & Built by Md Mehedi Hasan Tuhin</p>
+                <div class="social-links">
+                    <a href="https://github.com/mdmhtuhin" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i data-lucide="github"></i></a>
+                    <a href="https://linkedin.com/in/tuhinh" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+                    <a href="https://www.facebook.com/mehedihasan.tuhin2" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i data-lucide="facebook"></i></a>
+                    <a href="https://x.com/mdmhtuhin" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i data-lucide="twitter"></i></a>
+                    <a href="https://wa.me/8801753583954" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i data-lucide="message-circle"></i></a>
+                </div>
+            </footer>
+        </div>
     </div>
 </section>
 
+<!-- Back to Top Button -->
+<button class="back-to-top" id="back-to-top" aria-label="Back to Top">
+    <i data-lucide="arrow-up"></i>
+</button>
 
     <!-- External JavaScript -->
-    <script src="/assets/js/script.js"></script>
+    <script src="assets/js/script.js" defer></script>
 </body>
 </html>
