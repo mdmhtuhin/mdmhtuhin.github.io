@@ -116,129 +116,134 @@
 
 <!-- Hero Section -->
 <section id="home" class="reveal-on-scroll">
-    <div class="container hero-grid">
-        <div class="hero-text">
-            <div class="badge">Software Engineer & Backend Specialist</div>
-            <h1>
-                Md Mehedi Hasan <span class="text-red">Tuhin</span>
-            </h1>
-            <p>
-                Architecting scalable backend solutions with <span class="text-red" style="font-weight: 600">Ruby on Rails</span> and building dynamic mobile & web apps with <span class="text-yellow" style="font-weight: 600">React Native & Vue.js</span>. I turn complex logic into clean code.
-            </p>
-            <div class="hero-chip-row" role="list">
-                <span class="hero-chip" role="listitem">Backend Architecture</span>
-                <span class="hero-chip" role="listitem">Realtime Systems</span>
-                <span class="hero-chip" role="listitem">Technical Leadership</span>
-            </div>
-
-            <div class="hero-stats">
-                <div class="stat-item">
-                    <h4>6+</h4>
-                    <span>Years Exp.</span>
+    <div class="container">
+        <!-- Two Column Grid: Text Left, Carousel Right -->
+        <div class="hero-grid">
+            <!-- Hero Text Content - LEFT SIDE -->
+            <div class="hero-text">
+                <div class="badge">Software Engineer & Backend Specialist</div>
+                <h1>
+                    Md Mehedi Hasan <span class="text-red">Tuhin</span>
+                </h1>
+                <p>
+                    Architecting scalable backend solutions with <span class="text-red" style="font-weight: 600">Ruby on Rails</span> and building dynamic mobile & web apps with <span class="text-yellow" style="font-weight: 600">React Native & Vue.js</span>. I turn complex logic into clean code.
+                </p>
+                <div class="hero-chip-row" role="list">
+                    <span class="hero-chip" role="listitem">Backend Architecture</span>
+                    <span class="hero-chip" role="listitem">Realtime Systems</span>
+                    <span class="hero-chip" role="listitem">Technical Leadership</span>
                 </div>
-                <div class="stat-item">
-                    <h4>15+</h4>
-                    <span>Projects</span>
-                </div>
-                <div class="stat-item">
-                    <h4>2</h4>
-                    <span>Positions</span>
-                </div>
-            </div>
 
-            <div class="cta-group">
-                <a href="mailto:tuhinh02@gmail.com" class="btn btn-primary">
-                    <i data-lucide="mail"></i> Contact Me
-                </a>
-                <a href="https://github.com/mdmhtuhin" target="_blank" rel="noopener noreferrer" class="btn btn-outline" aria-label="View GitHub Profile">
-                    <i data-lucide="github"></i> GitHub
-                </a>
-                <a href="https://linkedin.com/in/tuhinh" target="_blank" rel="noopener noreferrer" class="btn btn-outline" aria-label="View LinkedIn Profile">
-                    <i data-lucide="linkedin"></i> LinkedIn
-                </a>
-            </div>
-
-            <div class="hero-insights-grid">
-                <article class="hero-card hero-stack-card">
-                    <div class="card-label">Core Stack</div>
-                    <ul class="hero-stack-list">
-                        <li>Rails APIs + Hotwire</li>
-                        <li>Vue 3 / React Native</li>
-                        <li>PostgreSQL · Redis · Sidekiq</li>
-                        <li>AWS EC2 · Docker</li>
-                    </ul>
-                </article>
-                <article class="hero-card hero-availability-card">
-                    <div class="card-label">Availability</div>
-                    <p>Open to senior backend roles, technical leadership, and consulting engagements.</p>
-                    <div class="hero-availability-status">
-                        <span class="status-dot" aria-hidden="true"></span>
-                        Accepting new challenges in Q1 2026
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <h4>6+</h4>
+                        <span>Years Exp.</span>
                     </div>
-                </article>
+                    <div class="stat-item">
+                        <h4>15+</h4>
+                        <span>Projects</span>
+                    </div>
+                    <div class="stat-item">
+                        <h4>2</h4>
+                        <span>Positions</span>
+                    </div>
+                </div>
+
+                <div class="cta-group">
+                    <a href="mailto:tuhinh02@gmail.com" class="btn btn-primary">
+                        <i data-lucide="mail"></i> Contact Me
+                    </a>
+                    <a href="https://github.com/mdmhtuhin" target="_blank" rel="noopener noreferrer" class="btn btn-outline" aria-label="View GitHub Profile">
+                        <i data-lucide="github"></i> GitHub
+                    </a>
+                    <a href="https://linkedin.com/in/tuhinh" target="_blank" rel="noopener noreferrer" class="btn btn-outline" aria-label="View LinkedIn Profile">
+                        <i data-lucide="linkedin"></i> LinkedIn
+                    </a>
+                </div>
+            </div>
+
+            <!-- Abstract Carousel Visual - RIGHT SIDE -->
+            <div class="carousel-container">
+                <div class="glow-bg"></div>
+
+                <!-- Card 1 -->
+                <div id="card-1" class="code-card card-pos-center">
+                    <div class="window-controls">
+                        <div class="dot dot-red"></div>
+                        <div class="dot dot-yellow"></div>
+                        <div class="dot dot-green"></div>
+                    </div>
+                    <div class="code-content">
+                        <p><span class="text-red">class</span> <span class="text-yellow">Developer</span> <span class="text-red">&lt;</span> <span class="text-yellow">ApplicationRecord</span></p>
+                        <p class="pl-4"><span class="text-red">def</span> <span class="text-blue">initialize</span></p>
+                        <p class="pl-8">@stack = [<span class="text-yellow">'React Native'</span>, <span class="text-yellow">'Vue.js'</span>, <span class="text-red">'Ruby on Rails'</span>]</p>
+                        <p class="pl-8">@passion = <span class="text-red">'Scalable Architecture'</span></p>
+                        <p class="pl-8">@location = <span class="text-red">'Dhaka, Bangladesh'</span></p>
+                        <p class="pl-4"><span class="text-red">end</span></p>
+                        <p class="pl-4"><span class="text-red">def</span> <span class="text-blue">mission</span></p>
+                        <p class="pl-8"><span class="text-yellow">build_robust_systems!</span></p>
+                        <p class="pl-4"><span class="text-red">end</span></p>
+                        <p><span class="text-red">end</span></p>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div id="card-2" class="code-card card-pos-right">
+                    <div class="window-controls">
+                        <div class="dot dot-red"></div>
+                        <div class="dot dot-yellow"></div>
+                        <div class="dot dot-green"></div>
+                    </div>
+                    <div class="code-content">
+                        <p><span class="text-blue">export default</span> {</p>
+                        <p class="pl-4">data() {</p>
+                        <p class="pl-8"><span class="text-red">return</span> {</p>
+                        <p class="pl-12">ui: <span class="text-yellow">'Vue.js'</span>,</p>
+                        <p class="pl-12">app: <span class="text-yellow">'React Native'</span>,</p>
+                        <p class="pl-8">}</p>
+                        <p class="pl-4">}</p>
+                        <p>}</p>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div id="card-3" class="code-card card-pos-left">
+                    <div class="window-controls">
+                        <div class="dot dot-red"></div>
+                        <div class="dot dot-yellow"></div>
+                        <div class="dot dot-green"></div>
+                    </div>
+                    <div class="code-content">
+                        <p>{</p>
+                        <p class="pl-4">"database": <span class="text-yellow">"PostgreSQL"</span>,</p>
+                        <p class="pl-4">"caching": <span class="text-yellow">"Redis"</span>,</p>
+                        <p class="pl-4">"queue": <span class="text-yellow">"Sidekiq"</span>,</p>
+                        <p class="pl-4">"deploy": <span class="text-yellow">"AWS EC2"</span></p>
+                        <p>}</p>
+                    </div>
+                </div>
             </div>
         </div>
 
-        <!-- Abstract Carousel Visual -->
-        <div class="carousel-container">
-            <div class="glow-bg"></div>
-
-            <!-- Card 1 -->
-            <div id="card-1" class="code-card card-pos-center">
-                <div class="window-controls">
-                    <div class="dot dot-red"></div>
-                    <div class="dot dot-yellow"></div>
-                    <div class="dot dot-green"></div>
+        <!-- Hero Insights Grid - Below Both Columns -->
+        <div class="hero-insights-grid">
+            <article class="hero-card hero-stack-card">
+                <div class="card-label">Core Stack</div>
+                <ul class="hero-stack-list">
+                    <li>Rails APIs + Hotwire</li>
+                    <li>Vue 3 / React Native</li>
+                    <li>PostgreSQL · Redis · Sidekiq</li>
+                    <li>AWS EC2 · Docker</li>
+                </ul>
+            </article>
+            <article class="hero-card hero-availability-card">
+                <div class="card-label">Availability</div>
+                <p>Open to senior backend roles, technical leadership, and consulting engagements.</p>
+                <div class="hero-availability-status">
+                    <span class="status-dot" aria-hidden="true"></span>
+                    Accepting new challenges in Q1 2026
                 </div>
-                <div class="code-content">
-                    <p><span class="text-red">class</span> <span class="text-yellow">Developer</span> <span class="text-red">&lt;</span> <span class="text-yellow">ApplicationRecord</span></p>
-                    <p class="pl-4"><span class="text-red">def</span> <span class="text-blue">initialize</span></p>
-                    <p class="pl-8">@stack = [<span class="text-yellow">'React Native'</span>, <span class="text-yellow">'Vue.js'</span>, <span class="text-red">'Ruby on Rails'</span>]</p>
-                    <p class="pl-8">@passion = <span class="text-red">'Scalable Architecture'</span></p>
-                    <p class="pl-8">@location = <span class="text-red">'Dhaka, Bangladesh'</span></p>
-                    <p class="pl-4"><span class="text-red">end</span></p>
-                    <p class="pl-4"><span class="text-red">def</span> <span class="text-blue">mission</span></p>
-                    <p class="pl-8"><span class="text-yellow">build_robust_systems!</span></p>
-                    <p class="pl-4"><span class="text-red">end</span></p>
-                    <p><span class="text-red">end</span></p>
-                </div>
-            </div>
-
-            <!-- Card 2 -->
-            <div id="card-2" class="code-card card-pos-right">
-                <div class="window-controls">
-                    <div class="dot dot-red"></div>
-                    <div class="dot dot-yellow"></div>
-                    <div class="dot dot-green"></div>
-                </div>
-                <div class="code-content">
-                    <p><span class="text-blue">export default</span> {</p>
-                    <p class="pl-4">data() {</p>
-                    <p class="pl-8"><span class="text-red">return</span> {</p>
-                    <p class="pl-12">ui: <span class="text-yellow">'Vue.js'</span>,</p>
-                    <p class="pl-12">app: <span class="text-yellow">'React Native'</span>,</p>
-                    <p class="pl-8">}</p>
-                    <p class="pl-4">}</p>
-                    <p>}</p>
-                </div>
-            </div>
-
-            <!-- Card 3 -->
-            <div id="card-3" class="code-card card-pos-left">
-                <div class="window-controls">
-                    <div class="dot dot-red"></div>
-                    <div class="dot dot-yellow"></div>
-                    <div class="dot dot-green"></div>
-                </div>
-                <div class="code-content">
-                    <p>{</p>
-                    <p class="pl-4">"database": <span class="text-yellow">"PostgreSQL"</span>,</p>
-                    <p class="pl-4">"caching": <span class="text-yellow">"Redis"</span>,</p>
-                    <p class="pl-4">"queue": <span class="text-yellow">"Sidekiq"</span>,</p>
-                    <p class="pl-4">"deploy": <span class="text-yellow">"AWS EC2"</span></p>
-                    <p>}</p>
-                </div>
-            </div>
+            </article>
         </div>
     </div>
     <div class="scroll-indicator" aria-hidden="true">

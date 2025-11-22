@@ -149,7 +149,24 @@ img {
     #home {
         padding-top: calc(var(--nav-height) + 2rem);
         padding-bottom: 3.5rem;
-        min-height: auto;
+    }
+
+    .hero-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-insights-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .cta-group {
+        flex-wrap: wrap;
+        gap: 0.75rem;
+    }
+
+    .btn {
+        font-size: 0.85rem;
+        padding: 0.75rem 1.25rem;
     }
 
     .hero-stats {
@@ -166,18 +183,6 @@ img {
         gap: 0.5rem;
     }
 
-    .hero-insights-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .cta-group {
-        flex-direction: column;
-    }
-
-    .btn {
-        width: 100%;
-        justify-content: center;
-    }
 
     /* Stack projects content first */
     .project-item { display: flex !important; flex-direction: column; }
@@ -365,6 +370,13 @@ html.dark .theme-btn { color: var(--brand-yellow); }
     z-index: -1;
 }
 
+#home .container {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    width: 100%;
+}
+
 .hero-grid {
     display: grid;
     gap: 3.5rem;
@@ -372,7 +384,14 @@ html.dark .theme-btn { color: var(--brand-yellow); }
 }
 
 @media (min-width: 768px) {
-    .hero-grid { grid-template-columns: 1fr 1fr; }
+    .hero-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .cta-group {
+        flex-wrap: nowrap;
+        flex-direction: row;
+    }
 }
 
 .badge {
@@ -470,23 +489,27 @@ html.dark .hero-chip {
     font-weight: 500;
 }
 
+
 .cta-group {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    flex-direction: row;
     gap: 1rem;
     margin-bottom: 2.5rem;
+    align-items: center;
 }
 
 .btn {
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
-    padding: 0.875rem 1.75rem;
+    padding: 0.875rem 1.5rem;
     border-radius: 0.5rem;
     font-weight: 600;
-    font-size: 0.95rem;
+    font-size: 0.9rem;
     transition: all 0.2s ease;
     cursor: pointer;
+    white-space: nowrap;
 }
 
 .btn:hover {
@@ -517,11 +540,13 @@ html.dark .hero-chip {
     color: var(--brand-red);
 }
 
+
 .hero-insights-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 1.5rem;
-    margin-top: 2.5rem;
+    margin-top: 0;
+    width: 100%;
 }
 
 .hero-card {
@@ -845,15 +870,20 @@ html.dark .icon-yellow {
     display: grid;
     gap: 2.5rem;
     align-items: center;
+    margin-bottom: 4rem;
 }
 
 @media (min-width: 768px) {
-    .project-item { grid-template-columns: 1fr 1fr; }
+    .project-item {
+        display: grid !important;
+        grid-template-columns: 1fr 1fr !important;
+        flex-direction: initial !important;
+    }
     .desktop-order-1 { order: 1; }
     .desktop-order-2 { order: 2; }
     .desktop-text-right { text-align: right; }
     .desktop-border-r {
-        border-right: 4px solid var(--brand-yellow);
+        border-right: 4px solid var(--brand-yellow) !important;
         border-left: none !important;
     }
     .desktop-justify-end { justify-content: flex-end; }
@@ -979,9 +1009,6 @@ html.dark .project-meta-item {
 }
 
 .contact-card {
-    background: var(--bg-card);
-    border: 1px solid var(--border-color);
-    border-radius: var(--radius);
     padding: 3rem;
     box-shadow: var(--shadow);
     max-width: 720px;
