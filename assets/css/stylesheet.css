@@ -426,7 +426,11 @@ html.dark .theme-btn { color: var(--brand-yellow); }
 .hero-grid {
     display: grid;
     gap: 3.5rem;
-    align-items: center;
+    align-items: flex-start;
+}
+
+.hero-text {
+    align-self: flex-start;
 }
 
 @media (min-width: 768px) {
@@ -542,6 +546,12 @@ html.dark .hero-chip {
     gap: 1rem;
     margin-bottom: 2.5rem;
     align-items: center;
+    overflow-x: auto;
+    padding-bottom: 0.25rem;
+}
+
+.cta-group .btn {
+    flex-shrink: 0;
 }
 
 .btn {
@@ -703,8 +713,8 @@ html.dark .hero-chip {
         height: 450px;
         width: 100%;
         perspective: 1000px;
-        align-items: center;
-        justify-content: center;
+        align-items: flex-start;
+        justify-content: flex-end;
     }
 }
 
