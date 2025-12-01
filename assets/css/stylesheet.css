@@ -1389,6 +1389,12 @@ footer p {
     transition: all 0.3s ease;
     z-index: 100;
     box-shadow: var(--shadow-soft);
+    color: var(--brand-red);
+}
+
+.back-to-top svg {
+    stroke: var(--brand-red);
+    transition: stroke 0.3s ease;
 }
 
 .back-to-top.show {
@@ -1400,6 +1406,10 @@ footer p {
     background: var(--brand-red);
     color: white;
     transform: translateY(-2px);
+}
+
+.back-to-top:hover svg {
+    stroke: white;
 }
 
 /* Print Styles for Resume */
