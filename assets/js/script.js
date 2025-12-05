@@ -8,6 +8,12 @@ if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.match
 // Initialize Lucide Icons
 lucide.createIcons();
 
+// Make hero section visible immediately on page load
+const heroSection = document.getElementById('home');
+if (heroSection) {
+    heroSection.classList.add('is-visible');
+}
+
 // Animation Observer for Scroll Reveal
 const observerOptions = {
     threshold: 0.1,
