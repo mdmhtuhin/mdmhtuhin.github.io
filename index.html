@@ -16,20 +16,29 @@
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://mdmhtuhin.github.io/">
+    <meta property="og:site_name" content="Md Mehedi Hasan Tuhin">
+    <meta property="og:locale" content="en_US">
     <meta property="og:title" content="Md Mehedi Hasan Tuhin — Senior Software Engineer">
     <meta property="og:description" content="6+ years architecting scalable Rails backends, realtime systems, and mobile & web apps. View my projects and experience.">
     <meta property="og:image" content="https://mdmhtuhin.github.io/assets/images/og-cover.png">
+    <meta property="og:image:type" content="image/png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Md Mehedi Hasan Tuhin — Senior Software Engineer, Ruby on Rails specialist">
 
     <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://mdmhtuhin.github.io/">
-    <meta property="twitter:title" content="Md Mehedi Hasan Tuhin — Senior Software Engineer">
-    <meta property="twitter:description" content="6+ years architecting scalable Rails backends, realtime systems, and mobile & web apps. View my projects and experience.">
-    <meta property="twitter:image" content="https://mdmhtuhin.github.io/assets/images/og-cover.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@mdmhtuhin">
+    <meta name="twitter:creator" content="@mdmhtuhin">
+    <meta name="twitter:url" content="https://mdmhtuhin.github.io/">
+    <meta name="twitter:title" content="Md Mehedi Hasan Tuhin — Senior Software Engineer">
+    <meta name="twitter:description" content="6+ years architecting scalable Rails backends, realtime systems, and mobile & web apps. View my projects and experience.">
+    <meta name="twitter:image" content="https://mdmhtuhin.github.io/assets/images/og-cover.png">
+    <meta name="twitter:image:alt" content="Md Mehedi Hasan Tuhin — Senior Software Engineer, Ruby on Rails specialist">
 
-    <link rel="icon" type="image/png" href="assets/images/nem_logo.png">
+    <link rel="icon" type="image/png" href="assets/images/logo.png">
+    <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest">
     <meta name="theme-color" content="#0b0b10">
     <meta name="color-scheme" content="dark light">
 
@@ -60,11 +69,16 @@
         "@graph": [
             {
                 "@type": "Person",
+                "@id": "https://mdmhtuhin.github.io/#person",
                 "name": "Md Mehedi Hasan Tuhin",
+                "alternateName": "Tuhin",
                 "jobTitle": "Senior Software Engineer",
+                "description": "Senior Software Engineer with 6+ years building scalable Ruby on Rails backends, realtime systems, and mobile & web apps with React Native and Vue.js.",
                 "url": "https://mdmhtuhin.github.io",
                 "email": "mailto:tuhinh02@gmail.com",
                 "image": "https://mdmhtuhin.github.io/assets/images/og-cover.png",
+                "nationality": { "@type": "Country", "name": "Bangladesh" },
+                "knowsLanguage": ["en", "bn"],
                 "sameAs": [
                     "https://github.com/mdmhtuhin",
                     "https://www.linkedin.com/in/mdmhtuhin/",
@@ -73,15 +87,30 @@
                     "https://medium.com/@mdmhtuhin"
                 ],
                 "worksFor": { "@type": "Organization", "name": "Syftet Limited" },
+                "hasOccupation": {
+                    "@type": "Occupation",
+                    "name": "Senior Software Engineer",
+                    "skills": "Ruby on Rails, PostgreSQL, Redis, Sidekiq, Vue.js, React Native, Software Architecture"
+                },
                 "address": { "@type": "PostalAddress", "addressLocality": "Dhaka", "addressCountry": "Bangladesh" },
                 "knowsAbout": ["Ruby on Rails", "PostgreSQL", "Redis", "Sidekiq", "JavaScript", "Vue.js", "React Native", "Software Architecture"]
             },
             {
                 "@type": "WebSite",
+                "@id": "https://mdmhtuhin.github.io/#website",
                 "name": "Md Mehedi Hasan Tuhin — Portfolio",
                 "url": "https://mdmhtuhin.github.io",
                 "description": "Portfolio of Md Mehedi Hasan Tuhin, a Senior Software Engineer specializing in Ruby on Rails, backend architecture, React Native, and Vue.js",
-                "author": { "@type": "Person", "name": "Md Mehedi Hasan Tuhin" }
+                "inLanguage": "en",
+                "author": { "@id": "https://mdmhtuhin.github.io/#person" }
+            },
+            {
+                "@type": "ProfilePage",
+                "url": "https://mdmhtuhin.github.io",
+                "name": "Md Mehedi Hasan Tuhin — Senior Software Engineer",
+                "isPartOf": { "@id": "https://mdmhtuhin.github.io/#website" },
+                "about": { "@id": "https://mdmhtuhin.github.io/#person" },
+                "mainEntity": { "@id": "https://mdmhtuhin.github.io/#person" }
             }
         ]
     }
@@ -100,7 +129,7 @@
 <header id="navbar">
     <div class="container nav-inner">
         <a href="#home" class="logo" aria-label="Home — Md Mehedi Hasan Tuhin">
-            <img src="assets/images/nem_logo.png" width="40" height="40" alt="MT monogram logo" loading="eager" decoding="async" fetchpriority="high">
+            <img src="assets/images/logo.png" width="40" height="40" alt="MT monogram logo" loading="eager" decoding="async" fetchpriority="high">
             <span class="logo-text">mdmh<span class="accent">tuhin</span></span>
         </a>
 
@@ -392,7 +421,7 @@
             <article class="project-item">
                 <div class="project-visual">
                     <a href="https://inweapp.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit iNwe live site">
-                        <img src="assets/images/inwe_web.png" alt="iNwe global chat community interface" class="project-img" loading="lazy">
+                        <img src="assets/images/inwe_web.png" alt="iNwe global chat community interface" class="project-img" width="1857" height="928" loading="lazy" decoding="async">
                     </a>
                 </div>
                 <div class="project-content">
@@ -421,7 +450,7 @@
             <article class="project-item project-item-reverse">
                 <div class="project-visual">
                     <a href="https://www.bcsprostuti.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit BCS Prostuti live site">
-                        <img src="assets/images/bcs_prostuti.png" alt="BCS Prostuti educational platform exam dashboard" class="project-img" loading="lazy">
+                        <img src="assets/images/bcs_prostuti.png" alt="BCS Prostuti educational platform exam dashboard" class="project-img" width="1857" height="928" loading="lazy" decoding="async">
                     </a>
                 </div>
                 <div class="project-content">

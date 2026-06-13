@@ -105,9 +105,9 @@
         var spyObserver = new IntersectionObserver(function (entries) {
             entries.forEach(function (entry) {
                 if (entry.isIntersecting) {
-                    navLinks.forEach(function (l) { l.classList.remove("active"); });
+                    navLinks.forEach(function (l) { l.classList.remove("active"); l.removeAttribute("aria-current"); });
                     var link = linkFor[entry.target.id];
-                    if (link) link.classList.add("active");
+                    if (link) { link.classList.add("active"); link.setAttribute("aria-current", "true"); }
                 }
             });
         }, { rootMargin: "-35% 0px -55% 0px" });
