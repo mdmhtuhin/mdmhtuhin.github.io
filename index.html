@@ -5,628 +5,601 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Primary Meta Tags -->
-    <title>Md Mehedi Hasan Tuhin | Senior Software Engineer & Rails Specialist</title>
-    <meta name="title" content="Md Mehedi Hasan Tuhin | Senior Software Engineer & Rails Specialist">
-    <meta name="description" content="Portfolio of Md Mehedi Hasan Tuhin, a Software Engineer based in Dhaka specializing in Ruby on Rails, Backend Architecture, React Native, and Vue.js. Building scalable solutions for 6+ years.">
-    <meta name="keywords" content="Software Engineer, Ruby on Rails Developer, Backend Developer, React Native, Vue.js, Dhaka, Bangladesh, Full Stack Developer, Web Development">
+    <title>Md Mehedi Hasan Tuhin — Senior Software Engineer · Ruby on Rails Specialist</title>
+    <meta name="title" content="Md Mehedi Hasan Tuhin — Senior Software Engineer · Ruby on Rails Specialist">
+    <meta name="description" content="Senior Software Engineer in Dhaka with 6+ years building scalable Rails backends, realtime systems, and mobile & web apps with React Native and Vue.js.">
+    <meta name="keywords" content="Software Engineer, Ruby on Rails Developer, Backend Developer, React Native, Vue.js, Dhaka, Bangladesh, Full Stack Developer">
     <meta name="author" content="Md Mehedi Hasan Tuhin">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://mdmhtuhin.github.io/">
-    <link rel="icon" href="/assets/images/favicon.png" type="image/svg+xml">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://mdmhtuhin.github.io/">
-    <meta property="og:title" content="Md Mehedi Hasan Tuhin | Senior Software Engineer">
-    <meta property="og:description" content="Architecting scalable backend solutions with Ruby on Rails and building dynamic mobile & web apps. View my projects and experience.">
-    <meta property="og:image" content="https://mdmhtuhin.github.io/assets/images/tuhin.png">
+    <meta property="og:title" content="Md Mehedi Hasan Tuhin — Senior Software Engineer">
+    <meta property="og:description" content="6+ years architecting scalable Rails backends, realtime systems, and mobile & web apps. View my projects and experience.">
+    <meta property="og:image" content="https://mdmhtuhin.github.io/assets/images/og-cover.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://mdmhtuhin.github.io/">
-    <meta property="twitter:title" content="Md Mehedi Hasan Tuhin | Senior Software Engineer">
-    <meta property="twitter:description" content="Architecting scalable backend solutions with Ruby on Rails and building dynamic mobile & web apps. View my projects and experience.">
-    <meta property="twitter:image" content="https://mdmhtuhin.github.io/assets/images/tuhin.png">
+    <meta property="twitter:title" content="Md Mehedi Hasan Tuhin — Senior Software Engineer">
+    <meta property="twitter:description" content="6+ years architecting scalable Rails backends, realtime systems, and mobile & web apps. View my projects and experience.">
+    <meta property="twitter:image" content="https://mdmhtuhin.github.io/assets/images/og-cover.png">
 
     <link rel="icon" type="image/png" href="assets/images/nem_logo.png">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="theme-color" content="#ffffff">
-    <meta name="color-scheme" content="light dark">
+    <meta name="theme-color" content="#0b0b10">
+    <meta name="color-scheme" content="dark light">
+
+    <!-- Apply saved theme before first paint (dark is default) -->
+    <script>
+        (function () {
+            if (window.location.search.indexOf("noanim") === -1) {
+                document.documentElement.classList.add("js");
+            }
+            try {
+                if (localStorage.theme === "light" ||
+                    (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: light)").matches)) {
+                    document.documentElement.classList.add("light");
+                }
+            } catch (e) { /* storage unavailable */ }
+        })();
+    </script>
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
-    <link rel="icon" href="assets/images/nem_logo.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 
-    <!-- JSON-LD Structured Data for SEO -->
+    <!-- JSON-LD Structured Data -->
     <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@graph": [
-                {
-                    "@type": "Person",
-                    "name": "Md Mehedi Hasan Tuhin",
-                    "jobTitle": "Senior Software Engineer & Rails Specialist",
-                    "url": "https://mdmhtuhin.github.io",
-                    "sameAs": [
-                        "https://github.com/mdmhtuhin",
-                        "https://www.linkedin.com/in/mdmhtuhin/",
-                        "https://www.facebook.com/mdmhtuhin02",
-                        "https://x.com/mdmhtuhin",
-                        "https://medium.com/@mdmhtuhin"
-                    ],
-                    "address": {
-                        "@type": "PostalAddress",
-                        "addressLocality": "Dhaka",
-                        "addressCountry": "Bangladesh"
-                    },
-                    "knowsAbout": ["Ruby on Rails", "JavaScript", "Vue.js", "React Native", "PostgreSQL", "Software Architecture"]
-                },
-                {
-                    "@type": "WebSite",
-                    "name": "Md Mehedi Hasan Tuhin Portfolio",
-                    "url": "https://mdmhtuhin.github.io",
-                    "description": "Portfolio of Md Mehedi Hasan Tuhin, a Senior Software Engineer specializing in Ruby on Rails, Backend Architecture, React Native, and Vue.js",
-                    "author": {
-                        "@type": "Person",
-                        "name": "Md Mehedi Hasan Tuhin"
-                    }
-                }
-            ]
-        }
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "Person",
+                "name": "Md Mehedi Hasan Tuhin",
+                "jobTitle": "Senior Software Engineer",
+                "url": "https://mdmhtuhin.github.io",
+                "email": "mailto:tuhinh02@gmail.com",
+                "image": "https://mdmhtuhin.github.io/assets/images/og-cover.png",
+                "sameAs": [
+                    "https://github.com/mdmhtuhin",
+                    "https://www.linkedin.com/in/mdmhtuhin/",
+                    "https://www.facebook.com/mdmhtuhin02",
+                    "https://x.com/mdmhtuhin",
+                    "https://medium.com/@mdmhtuhin"
+                ],
+                "worksFor": { "@type": "Organization", "name": "Syftet Limited" },
+                "address": { "@type": "PostalAddress", "addressLocality": "Dhaka", "addressCountry": "Bangladesh" },
+                "knowsAbout": ["Ruby on Rails", "PostgreSQL", "Redis", "Sidekiq", "JavaScript", "Vue.js", "React Native", "Software Architecture"]
+            },
+            {
+                "@type": "WebSite",
+                "name": "Md Mehedi Hasan Tuhin — Portfolio",
+                "url": "https://mdmhtuhin.github.io",
+                "description": "Portfolio of Md Mehedi Hasan Tuhin, a Senior Software Engineer specializing in Ruby on Rails, backend architecture, React Native, and Vue.js",
+                "author": { "@type": "Person", "name": "Md Mehedi Hasan Tuhin" }
+            }
+        ]
+    }
     </script>
 
     <!-- Lucide Icons -->
-    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://unpkg.com/lucide@latest" defer></script>
     <!-- Stylesheet -->
     <link rel="stylesheet" href="assets/css/stylesheet.css">
 </head>
 <body>
 
-<!-- Navigation Bar -->
-<nav id="navbar">
+<a href="#main" class="skip-link">Skip to content</a>
+
+<!-- ===== Navigation ===== -->
+<header id="navbar">
     <div class="container nav-inner">
-        <!-- Logo - Fixed -->
-        <a href="#home" class="logo" aria-label="Md Mehedi Hasan Tuhin Portfolio Home">
-            <img src="assets/images/nem_logo.png" width="100" height="70" alt="NEM Logo" class="nem-logo" loading="eager" decoding="async" fetchpriority="high" />
+        <a href="#home" class="logo" aria-label="Home — Md Mehedi Hasan Tuhin">
+            <img src="assets/images/nem_logo.png" width="40" height="40" alt="MT monogram logo" loading="eager" decoding="async" fetchpriority="high">
+            <span class="logo-text">mdmh<span class="accent">tuhin</span></span>
         </a>
 
-        <!-- Desktop Menu -->
-        <div class="desktop-menu">
-            <a href="#home" class="nav-link">Home</a>
-            <a href="#about" class="nav-link">About</a>
-            <a href="#skills" class="nav-link">Skills</a>
-            <a href="#projects" class="nav-link">Projects</a>
-            <a href="#experience" class="nav-link">Experience</a>
-            <a href="#testimonials" class="nav-link">Testimonials</a>
-            <a href="#blog" class="nav-link">Blog</a>
-            <a href="#contact" class="nav-link">Contact</a>
-
-            <!-- Theme Toggle -->
-            <button id="theme-toggle-desktop" class="theme-btn" aria-label="Toggle Dark Mode">
+        <nav class="desktop-menu" aria-label="Primary">
+            <a href="#about" class="nav-link" data-section="about"><span class="nav-num">01.</span>About</a>
+            <a href="#skills" class="nav-link" data-section="skills"><span class="nav-num">02.</span>Skills</a>
+            <a href="#experience" class="nav-link" data-section="experience"><span class="nav-num">03.</span>Experience</a>
+            <a href="#projects" class="nav-link" data-section="projects"><span class="nav-num">04.</span>Projects</a>
+            <a href="#writing" class="nav-link" data-section="writing"><span class="nav-num">05.</span>Writing</a>
+            <a href="#contact" class="nav-cta">Contact</a>
+            <button id="theme-toggle" class="theme-btn" aria-label="Toggle theme">
                 <i data-lucide="sun" class="sun-icon"></i>
                 <i data-lucide="moon" class="moon-icon"></i>
             </button>
-        </div>
+        </nav>
 
-        <!-- Mobile Controls -->
         <div class="mobile-controls">
-            <button id="theme-toggle-mobile" class="theme-btn" aria-label="Toggle Dark Mode">
+            <button id="theme-toggle-mobile" class="theme-btn" aria-label="Toggle theme">
                 <i data-lucide="sun" class="sun-icon"></i>
                 <i data-lucide="moon" class="moon-icon"></i>
             </button>
-            <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Open Mobile Menu">
+            <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
                 <i data-lucide="menu" id="menu-icon"></i>
             </button>
         </div>
     </div>
 
-    <!-- Mobile Menu Dropdown -->
-    <div id="mobile-menu" class="mobile-menu-dropdown hidden">
-        <a href="#home" class="mobile-link">Home</a>
-        <a href="#about" class="mobile-link">About</a>
-        <a href="#skills" class="mobile-link">Skills</a>
-        <a href="#projects" class="mobile-link">Projects</a>
-        <a href="#experience" class="mobile-link">Experience</a>
-        <a href="#testimonials" class="mobile-link">Testimonials</a>
-        <a href="#blog" class="mobile-link">Blog</a>
-        <a href="#contact" class="mobile-link">Contact</a>
+    <div id="mobile-menu" class="mobile-menu-dropdown" hidden>
+        <a href="#about" class="mobile-link"><span class="nav-num">01.</span>About</a>
+        <a href="#skills" class="mobile-link"><span class="nav-num">02.</span>Skills</a>
+        <a href="#experience" class="mobile-link"><span class="nav-num">03.</span>Experience</a>
+        <a href="#projects" class="mobile-link"><span class="nav-num">04.</span>Projects</a>
+        <a href="#writing" class="mobile-link"><span class="nav-num">05.</span>Writing</a>
+        <a href="#contact" class="mobile-link"><span class="nav-num">06.</span>Contact</a>
     </div>
-</nav>
 
-<!-- Hero Section -->
-<section id="home" class="reveal-on-scroll">
+    <div class="scroll-progress" aria-hidden="true"><span id="scroll-progress-bar"></span></div>
+</header>
+
+<main id="main">
+
+<!-- ===== Hero ===== -->
+<section id="home" class="hero">
+    <div class="hero-bg" aria-hidden="true"></div>
     <div class="container">
-        <!-- Two Column Grid: Text Left, Carousel Right -->
         <div class="hero-grid">
-            <!-- Hero Text Content - LEFT SIDE -->
             <div class="hero-text">
-                <div class="badge">Software Engineer & Backend Specialist</div>
-                <h1>
-                    Md Mehedi Hasan <span class="text-red">Tuhin</span>
-                </h1>
-                <p>
-                    Architecting scalable backend solutions with <span class="text-red" style="font-weight: 600">Ruby on Rails</span> and building dynamic mobile & web apps with <span class="text-yellow" style="font-weight: 600">React Native & Vue.js</span>. I turn complex logic into clean code.
+                <p class="hero-eyebrow font-mono"><span class="prompt">~/dhaka</span> $ whoami</p>
+                <h1>Md Mehedi Hasan <span class="accent">Tuhin</span></h1>
+                <h2 class="hero-roles" aria-label="I build scalable backends, realtime systems, mobile and web apps">
+                    I build <span id="role-rotator" class="role-word">scalable backends</span><span class="cursor" aria-hidden="true"></span>
+                </h2>
+                <p class="hero-desc">
+                    Senior Software Engineer with <strong>6+ years</strong> of experience architecting
+                    high-traffic <strong class="accent">Ruby on Rails</strong> systems and shipping polished
+                    mobile &amp; web experiences with <strong class="accent-2">React Native &amp; Vue.js</strong>.
+                    I turn complex logic into clean, reliable code.
                 </p>
-                <div class="hero-chip-row" role="list">
-                    <span class="hero-chip" role="listitem">Backend Architecture</span>
-                    <span class="hero-chip" role="listitem">Realtime Systems</span>
-                    <span class="hero-chip" role="listitem">Technical Leadership</span>
-                </div>
-
-                <div class="hero-stats">
-                    <div class="stat-item">
-                        <h4>6+</h4>
-                        <span>Years Exp.</span>
-                    </div>
-                    <div class="stat-item">
-                        <h4>15+</h4>
-                        <span>Projects</span>
-                    </div>
-                    <div class="stat-item">
-                        <h4>2</h4>
-                        <span>Positions</span>
-                    </div>
-                </div>
 
                 <div class="cta-group">
-                    <a href="mailto:tuhinh02@gmail.com" class="btn btn-primary">
-                        <i data-lucide="mail"></i> Contact Me
-                    </a>
-                    <a href="https://github.com/mdmhtuhin" target="_blank" rel="noopener noreferrer" class="btn btn-outline" aria-label="View GitHub Profile">
-                        <i data-lucide="github"></i> GitHub
-                    </a>
-                    <a href="https://www.linkedin.com/in/mdmhtuhin/" target="_blank" rel="noopener noreferrer" class="btn btn-outline" aria-label="View LinkedIn Profile">
-                        <i data-lucide="linkedin"></i> LinkedIn
-                    </a>
-                    <a href="https://medium.com/@mdmhtuhin" target="_blank" rel="noopener noreferrer" class="btn btn-outline" aria-label="Read articles on Medium">
-                        <i data-lucide="book-open"></i> Medium
-                    </a>
+                    <a href="#contact" class="btn btn-primary">Get in touch <i data-lucide="arrow-right"></i></a>
+                    <a href="#projects" class="btn btn-outline">View projects</a>
+                </div>
+
+                <div class="hero-socials">
+                    <a href="https://github.com/mdmhtuhin" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><svg class="brand-icon" width="20" height="20"><use href="#i-github"/></svg></a>
+                    <a href="https://www.linkedin.com/in/mdmhtuhin/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg class="brand-icon" width="20" height="20"><use href="#i-linkedin"/></svg></a>
+                    <a href="https://medium.com/@mdmhtuhin" target="_blank" rel="noopener noreferrer" aria-label="Medium"><svg class="brand-icon" width="20" height="20"><use href="#i-medium"/></svg></a>
+                    <a href="mailto:tuhinh02@gmail.com" aria-label="Email"><i data-lucide="mail"></i></a>
+                    <span class="social-divider" aria-hidden="true"></span>
+                    <span class="availability"><span class="status-dot" aria-hidden="true"></span>Open to senior &amp; lead roles</span>
                 </div>
             </div>
 
-            <!-- Abstract Carousel Visual - RIGHT SIDE -->
-            <div class="carousel-container">
-                <div class="glow-bg"></div>
-
-                <!-- Card 1 -->
-                <div id="card-1" class="code-card card-pos-center">
-                    <div class="window-controls">
-                        <div class="dot dot-red"></div>
-                        <div class="dot dot-yellow"></div>
-                        <div class="dot dot-green"></div>
+            <div class="hero-visual" aria-hidden="true">
+                <div class="terminal-card">
+                    <div class="terminal-header">
+                        <span class="dot dot-red"></span>
+                        <span class="dot dot-yellow"></span>
+                        <span class="dot dot-green"></span>
+                        <span class="terminal-title font-mono">developer.rb — ruby</span>
                     </div>
-                    <div class="code-content">
-                        <p><span class="text-red">class</span> <span class="text-yellow">Developer</span> <span class="text-red">&lt;</span> <span class="text-yellow">ApplicationRecord</span></p>
-                        <p class="pl-4"><span class="text-red">def</span> <span class="text-blue">initialize</span></p>
-                        <p class="pl-8">@stack = [<span class="text-yellow">'React Native'</span>, <span class="text-yellow">'Vue.js'</span>, <span class="text-red">'Ruby on Rails'</span>]</p>
-                        <p class="pl-8">@passion = <span class="text-red">'Scalable Architecture'</span></p>
-                        <p class="pl-8">@location = <span class="text-red">'Dhaka, Bangladesh'</span></p>
-                        <p class="pl-4"><span class="text-red">end</span></p>
-                        <p class="pl-4"><span class="text-red">def</span> <span class="text-blue">mission</span></p>
-                        <p class="pl-8"><span class="text-yellow">build_robust_systems!</span></p>
-                        <p class="pl-4"><span class="text-red">end</span></p>
-                        <p><span class="text-red">end</span></p>
-                    </div>
-                </div>
-
-                <!-- Card 2 -->
-                <div id="card-2" class="code-card card-pos-right">
-                    <div class="window-controls">
-                        <div class="dot dot-red"></div>
-                        <div class="dot dot-yellow"></div>
-                        <div class="dot dot-green"></div>
-                    </div>
-                    <div class="code-content">
-                        <p><span class="text-blue">export default</span> {</p>
-                        <p class="pl-4">data() {</p>
-                        <p class="pl-8"><span class="text-red">return</span> {</p>
-                        <p class="pl-12">ui: <span class="text-yellow">'Vue.js'</span>,</p>
-                        <p class="pl-12">app: <span class="text-yellow">'React Native'</span>,</p>
-                        <p class="pl-8">}</p>
-                        <p class="pl-4">}</p>
-                        <p>}</p>
-                    </div>
-                </div>
-
-                <!-- Card 3 -->
-                <div id="card-3" class="code-card card-pos-left">
-                    <div class="window-controls">
-                        <div class="dot dot-red"></div>
-                        <div class="dot dot-yellow"></div>
-                        <div class="dot dot-green"></div>
-                    </div>
-                    <div class="code-content">
-                        <p>{</p>
-                        <p class="pl-4">"database": <span class="text-yellow">"PostgreSQL"</span>,</p>
-                        <p class="pl-4">"caching": <span class="text-yellow">"Redis"</span>,</p>
-                        <p class="pl-4">"queue": <span class="text-yellow">"Sidekiq"</span>,</p>
-                        <p class="pl-4">"deploy": <span class="text-yellow">"AWS EC2"</span></p>
-                        <p>}</p>
-                    </div>
+                    <pre class="terminal-body font-mono"><code><span class="code-line"><span class="tk-kw">class</span> <span class="tk-const">Developer</span> <span class="tk-kw">&lt;</span> <span class="tk-const">Engineer</span></span>
+<span class="code-line">  <span class="tk-kw">def</span> <span class="tk-fn">initialize</span></span>
+<span class="code-line">    <span class="tk-var">@name</span>     = <span class="tk-str">"Tuhin"</span></span>
+<span class="code-line">    <span class="tk-var">@stack</span>    = [<span class="tk-str">"Rails"</span>, <span class="tk-str">"Vue"</span>, <span class="tk-str">"React Native"</span>]</span>
+<span class="code-line">    <span class="tk-var">@infra</span>    = [<span class="tk-str">"PostgreSQL"</span>, <span class="tk-str">"Redis"</span>, <span class="tk-str">"Sidekiq"</span>]</span>
+<span class="code-line">    <span class="tk-var">@location</span> = <span class="tk-str">"Dhaka, Bangladesh 🇧🇩"</span></span>
+<span class="code-line">  <span class="tk-kw">end</span></span>
+<span class="code-line"></span>
+<span class="code-line">  <span class="tk-kw">def</span> <span class="tk-fn">mission</span></span>
+<span class="code-line">    build(<span class="tk-sym">:robust_systems</span>, at_scale: <span class="tk-const">true</span>)</span>
+<span class="code-line">  <span class="tk-kw">end</span></span>
+<span class="code-line"><span class="tk-kw">end</span></span></code></pre>
                 </div>
             </div>
         </div>
 
-        <!-- Hero Insights Grid - Below Both Columns -->
-        <div class="hero-insights-grid">
-            <article class="hero-card hero-stack-card">
-                <div class="card-label">Core Stack</div>
-                <ul class="hero-stack-list">
-                    <li>Rails APIs + Hotwire</li>
-                    <li>Vue 3 / React Native</li>
-                    <li>PostgreSQL · Redis · Sidekiq</li>
-                    <li>AWS EC2 · Docker</li>
-                </ul>
-            </article>
-            <article class="hero-card hero-availability-card">
-                <div class="card-label">Availability</div>
-                <p>Open to senior backend roles, technical leadership, and consulting engagements.</p>
-                <div class="hero-availability-status">
-                    <span class="status-dot" aria-hidden="true"></span>
-                    Accepting new challenges in Q1 2026
-                </div>
-            </article>
+        <div class="hero-stats" role="list">
+            <div class="stat-item" role="listitem">
+                <h3><span class="count-up" data-target="6">0</span>+</h3>
+                <span>Years experience</span>
+            </div>
+            <div class="stat-item" role="listitem">
+                <h3><span class="count-up" data-target="15">0</span>+</h3>
+                <span>Projects shipped</span>
+            </div>
+            <div class="stat-item" role="listitem">
+                <h3><span class="count-up" data-target="1">0</span>M+</h3>
+                <span>Monthly actions served</span>
+            </div>
+            <div class="stat-item" role="listitem">
+                <h3>99.95%</h3>
+                <span>Uptime SLA</span>
+            </div>
         </div>
     </div>
-    <div class="scroll-indicator" aria-hidden="true">
-        <div class="scroll-track"><span class="scroll-thumb"></span></div>
+
+    <div class="marquee" aria-hidden="true">
+        <div class="marquee-track font-mono">
+            <span>Ruby on Rails</span><span>·</span><span>PostgreSQL</span><span>·</span><span>Redis</span><span>·</span><span>Sidekiq</span><span>·</span><span>Vue.js</span><span>·</span><span>React Native</span><span>·</span><span>JavaScript</span><span>·</span><span>Hotwire</span><span>·</span><span>RabbitMQ</span><span>·</span><span>AWS</span><span>·</span><span>Docker</span><span>·</span><span>RSpec</span><span>·</span>
+            <span>Ruby on Rails</span><span>·</span><span>PostgreSQL</span><span>·</span><span>Redis</span><span>·</span><span>Sidekiq</span><span>·</span><span>Vue.js</span><span>·</span><span>React Native</span><span>·</span><span>JavaScript</span><span>·</span><span>Hotwire</span><span>·</span><span>RabbitMQ</span><span>·</span><span>AWS</span><span>·</span><span>Docker</span><span>·</span><span>RSpec</span><span>·</span>
+        </div>
     </div>
 </section>
 
-<!-- About Section -->
-<section id="about" class="section-padding bg-alt reveal-on-scroll">
+<!-- ===== About ===== -->
+<section id="about" class="section reveal-on-scroll">
     <div class="container">
         <div class="section-header">
-            <span class="section-number">01.</span>
-            <h2 class="section-title">About Me</h2>
+            <span class="section-number font-mono">01.</span>
+            <h2 class="section-title">About me</h2>
+            <span class="section-line" aria-hidden="true"></span>
         </div>
+
         <div class="about-grid">
             <div class="about-text">
                 <p>
-                    Hello! I'm Tuhin, a passionate Software Engineer based in Dhaka. My journey in tech started back in 2019, and I've evolved into a full-stack developer who loves the elegance of <strong class="text-red">Ruby</strong> and the dynamic power of <strong class="text-yellow">JavaScript</strong>.
+                    Hello! I'm Tuhin, a software engineer based in Dhaka. My journey started in 2019,
+                    and since then I've grown into a full-stack developer who loves the elegance of
+                    <strong class="accent">Ruby</strong> and the dynamic power of <strong class="accent-2">JavaScript</strong>.
                 </p>
                 <p>
-                    Currently, I work at <span class="text-red" style="font-weight:600">Syftet Limited</span>, handling the complete development cycle—from requirement analysis to deployment. I specialize in building high-traffic applications like real-time chat communities and large-scale educational platforms.
+                    At <strong class="accent">Syftet Limited</strong> I own the complete development
+                    cycle — from requirement analysis to deployment. I specialize in high-traffic systems:
+                    realtime chat communities serving over a million monthly actions, and large-scale
+                    educational platforms with tens of thousands of learners.
                 </p>
                 <p>
-                    I don't just write code; I solve problems. Whether it's optimizing a PostgreSQL query, managing game states, or architecting a broadcast server, I thrive on technical challenges.
+                    I don't just write code; I solve problems. Whether it's optimizing a PostgreSQL query,
+                    managing game state, or architecting a broadcast server, I thrive on technical challenges.
                 </p>
+                <ul class="about-highlights">
+                    <li><i data-lucide="check-circle-2"></i> Backend architecture &amp; API design</li>
+                    <li><i data-lucide="check-circle-2"></i> Realtime systems &amp; broadcasting</li>
+                    <li><i data-lucide="check-circle-2"></i> Performance tuning &amp; scaling</li>
+                    <li><i data-lucide="check-circle-2"></i> Technical leadership &amp; mentoring</li>
+                </ul>
             </div>
-            <div class="location-wrapper">
-                <div class="location-card">
-                    <i data-lucide="map-pin" class="text-red" style="width: 48px; height: 48px; margin-bottom: 1rem;"></i>
-                    <h3 style="font-size: 1.25rem; font-weight: 700; margin-bottom: 0.5rem;">Dhaka, Bangladesh</h3>
-                    <p class="text-muted" style="color: var(--text-muted)">Available for remote work & challenging leadership roles.</p>
+
+            <aside class="about-card spotlight-card">
+                <div class="about-card-row">
+                    <i data-lucide="map-pin"></i>
+                    <div>
+                        <h3>Dhaka, Bangladesh</h3>
+                        <p>UTC+6 · Remote-friendly</p>
+                    </div>
                 </div>
-            </div>
+                <div class="about-card-row">
+                    <i data-lucide="briefcase"></i>
+                    <div>
+                        <h3>Software Engineer</h3>
+                        <p>Syftet Limited · 2019 — present</p>
+                    </div>
+                </div>
+                <div class="about-card-row">
+                    <i data-lucide="sparkles"></i>
+                    <div>
+                        <h3>Currently exploring</h3>
+                        <p>Hotwire, system design &amp; AI tooling</p>
+                    </div>
+                </div>
+                <div class="about-availability">
+                    <span class="status-dot" aria-hidden="true"></span>
+                    Available for senior backend, leadership &amp; consulting roles
+                </div>
+            </aside>
         </div>
     </div>
 </section>
 
-<!-- Skills Section -->
-<section id="skills" class="section-padding reveal-on-scroll">
+<!-- ===== Skills ===== -->
+<section id="skills" class="section section-alt reveal-on-scroll">
     <div class="container">
         <div class="section-header">
-            <span class="section-number">02.</span>
-            <h2 class="section-title">Technical Stack</h2>
+            <span class="section-number font-mono">02.</span>
+            <h2 class="section-title">Technical stack</h2>
+            <span class="section-line" aria-hidden="true"></span>
         </div>
 
         <div class="skills-grid">
-            <!-- Backend -->
-            <div class="skill-card">
+            <article class="skill-card spotlight-card">
                 <div class="skill-header">
-                    <div class="icon-box icon-red">
-                        <i data-lucide="server"></i>
-                    </div>
-                    <h3 style="font-size: 1.25rem; font-weight: 700;">Backend (Rails)</h3>
+                    <div class="icon-box icon-accent"><i data-lucide="server"></i></div>
+                    <h3>Backend &amp; APIs</h3>
                 </div>
-                <ul class="skill-list">
-                    <li><i data-lucide="chevron-right" class="chevron"></i> Ruby</li>
-                    <li><i data-lucide="chevron-right" class="chevron"></i> Ruby on Rails</li>
-                    <li><i data-lucide="chevron-right" class="chevron"></i> PostgreSQL & MySQL</li>
-                    <li><i data-lucide="chevron-right" class="chevron"></i> RabbitMQ (Broadcasting)</li>
-                    <li><i data-lucide="chevron-right" class="chevron"></i> RESTful API Design</li>
-                </ul>
-            </div>
+                <p class="skill-blurb">Where I spend most of my time — designing APIs that stay fast under load.</p>
+                <div class="skill-tags">
+                    <span>Ruby</span><span>Ruby on Rails</span><span>PostgreSQL</span><span>MySQL</span>
+                    <span>Redis</span><span>Sidekiq</span><span>RabbitMQ</span><span>REST API design</span>
+                </div>
+            </article>
 
-            <!-- Frontend -->
-            <div class="skill-card">
+            <article class="skill-card spotlight-card">
                 <div class="skill-header">
-                    <div class="icon-box icon-yellow">
-                        <i data-lucide="code"></i>
-                    </div>
-                    <h3 style="font-size: 1.25rem; font-weight: 700;">Frontend & Mobile</h3>
+                    <div class="icon-box icon-accent-2"><i data-lucide="layout"></i></div>
+                    <h3>Frontend &amp; Mobile</h3>
                 </div>
-                <ul class="skill-list">
-                    <li><i data-lucide="chevron-right" class="chevron text-yellow"></i> JavaScript (ES6+)</li>
-                    <li><i data-lucide="chevron-right" class="chevron text-yellow"></i> React Native (Mobile)</li>
-                    <li><i data-lucide="chevron-right" class="chevron text-yellow"></i> Vue.js (Vue 3, Router)</li>
-                    <li><i data-lucide="chevron-right" class="chevron text-yellow"></i> HTML5 & CSS3</li>
-                    <li><i data-lucide="chevron-right" class="chevron text-yellow"></i> Bootstrap & Tailwind</li>
-                </ul>
-            </div>
+                <p class="skill-blurb">Interfaces that feel fast and stay maintainable across web and mobile.</p>
+                <div class="skill-tags">
+                    <span>JavaScript (ES6+)</span><span>Vue 3</span><span>React Native</span><span>Hotwire</span>
+                    <span>HTML5 &amp; CSS3</span><span>Tailwind</span><span>Bootstrap</span>
+                </div>
+            </article>
 
-            <!-- Tools -->
-            <div class="skill-card">
+            <article class="skill-card spotlight-card">
                 <div class="skill-header">
-                    <div class="icon-box icon-neutral">
-                        <i data-lucide="terminal"></i>
-                    </div>
-                    <h3 style="font-size: 1.25rem; font-weight: 700;">Tools & Deployment</h3>
+                    <div class="icon-box icon-neutral"><i data-lucide="terminal"></i></div>
+                    <h3>Infrastructure &amp; Tools</h3>
                 </div>
-                <ul class="skill-list">
-                    <li><i data-lucide="chevron-right" class="chevron" style="color: var(--text-muted)"></i> Git & GitHub</li>
-                    <li><i data-lucide="chevron-right" class="chevron" style="color: var(--text-muted)"></i> AWS (EC2, S3 Basics)</li>
-                    <li><i data-lucide="chevron-right" class="chevron" style="color: var(--text-muted)"></i> RSpec (Testing)</li>
-                    <li><i data-lucide="chevron-right" class="chevron" style="color: var(--text-muted)"></i> Agile / Scrum</li>
-                    <li><i data-lucide="chevron-right" class="chevron" style="color: var(--text-muted)"></i> Linux Environment</li>
-                </ul>
-            </div>
+                <p class="skill-blurb">Everything that keeps shipped software running and the team moving.</p>
+                <div class="skill-tags">
+                    <span>AWS (EC2, S3)</span><span>Docker</span><span>Linux</span><span>Git &amp; GitHub</span>
+                    <span>RSpec</span><span>CI/CD</span><span>Agile / Scrum</span>
+                </div>
+            </article>
         </div>
     </div>
 </section>
 
-<!-- Projects Section -->
-<section id="projects" class="section-padding bg-alt reveal-on-scroll">
+<!-- ===== Experience ===== -->
+<section id="experience" class="section reveal-on-scroll">
     <div class="container">
         <div class="section-header">
-            <span class="section-number">03.</span>
-            <h2 class="section-title">Featured Projects</h2>
-        </div>
-
-        <div class="projects-stack">
-            <!-- Project 1 -->
-            <article class="project-item">
-                <div class="project-content">
-                    <div class="project-label text-red">Social Platform (Backend)</div>
-                    <h3 style="font-size: 1.8rem; font-weight: 700;">iNwe Global Chat Community</h3>
-                    <div class="project-desc-card border-l-accent">
-                        <p>
-                            A comprehensive mobile internet-based chat community with a virtual economy and live gaming. I developed the backend API and game logic to support user profiles, private/public rooms, and real-time virtual gifting.
-                        </p>
-                    </div>
-                    <div class="project-meta">
-                        <div class="project-meta-item">
-                            <i data-lucide="activity"></i>
-                            <span>1M+ monthly actions</span>
-                        </div>
-                        <div class="project-meta-item">
-                            <i data-lucide="shield"></i>
-                            <span>99.95% uptime SLA</span>
-                        </div>
-                    </div>
-<!--                    <div style="margin-top: 1.5rem;">-->
-<!--                        <a href="https://inweapp.com/" target="_blank" rel="noopener noreferrer" class="btn btn-outline" style="padding: 0.5rem 1rem; font-size: 0.875rem;">-->
-<!--                            <i data-lucide="external-link" style="width: 16px; height: 16px;"></i> View Live Project-->
-<!--                        </a>-->
-<!--                    </div>-->
-                </div>
-                <div class="project-visual">
-                    <img src="assets/images/inwe_web.png" alt="iNwe Global Chat Community Interface showing real-time chat features and user interface" class="project-img" loading="lazy">
-                    <div class="project-overlay">
-                        <div class="project-links">
-                            <a href="https://inweapp.com/" target="_blank" rel="noopener noreferrer" class="project-link">
-                                <i data-lucide="external-link"></i> Live Demo
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </article>
-
-            <!-- Project 2 -->
-            <article class="project-item">
-                <div class="project-visual desktop-order-1">
-                    <img src="assets/images/bcs_prostuti.png" alt="BCS Prostuti Educational Platform showing exam interface and learning dashboard" class="project-img" loading="lazy">
-                    <div class="project-overlay">
-                        <div class="project-links">
-                            <a href="https://www.bcsprostuti.com/" target="_blank" rel="noopener noreferrer" class="project-link">
-                                <i data-lucide="external-link"></i> Live Demo
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-content desktop-text-right desktop-order-2">
-                    <div class="project-label text-yellow">EdTech Platform (Mobile/Web)</div>
-                    <h3 style="font-size: 1.8rem; font-weight: 700;">BCS Prostuti</h3>
-                    <div class="project-desc-card border-l-accent desktop-border-r">
-                        <p>
-                            An educational platform serving 60,000+ questions for government job aspirants. I led the frontend development, building a responsive Single Page Application (SPA) and contributing to mobile features for real-time exam simulations.
-                        </p>
-                    </div>
-                    <div class="project-meta desktop-justify-end">
-                        <div class="project-meta-item">
-                            <i data-lucide="layers"></i>
-                            <span>60k+ curated questions</span>
-                        </div>
-                        <div class="project-meta-item">
-                            <i data-lucide="smartphone"></i>
-                            <span>Dual Web & Mobile launch</span>
-                        </div>
-                    </div>
-<!--                    <div style="margin-top: 1.5rem;">-->
-<!--                        <a href="https://www.bcsprostuti.com/" target="_blank" rel="noopener noreferrer" class="btn btn-outline" style="padding: 0.5rem 1rem; font-size: 0.875rem;">-->
-<!--                            <i data-lucide="external-link" style="width: 16px; height: 16px;"></i> View Live Project-->
-<!--                        </a>-->
-<!--                    </div>-->
-                </div>
-            </article>
-        </div>
-    </div>
-</section>
-
-<!-- Experience Section -->
-<section id="experience" class="section-padding reveal-on-scroll">
-    <div class="container">
-        <div class="section-header" style="justify-content: center;">
-            <span class="section-number">04.</span>
+            <span class="section-number font-mono">03.</span>
             <h2 class="section-title">Experience</h2>
+            <span class="section-line" aria-hidden="true"></span>
         </div>
 
         <div class="timeline">
-            <!-- Role 1 -->
             <div class="timeline-item">
-                <div class="timeline-dot" style="background-color: var(--brand-red); box-shadow: 0 0 0 4px var(--brand-red-dim);"></div>
-                <h3 style="font-size: 1.25rem; font-weight: 700;">Software Engineer</h3>
-                <div class="timeline-date">
-                    <span class="text-red">Syftet Limited</span>
-                    <span>•</span>
-                    <span>Jan 2020 - Present</span>
+                <div class="timeline-dot timeline-dot-active" aria-hidden="true"></div>
+                <div class="timeline-content">
+                    <div class="timeline-date font-mono">Jan 2020 — Present</div>
+                    <h3>Software Engineer · <span class="accent">Syftet Limited</span></h3>
+                    <ul class="timeline-list">
+                        <li>Lead development of backend APIs and frontend interfaces for client projects.</li>
+                        <li>Architect scalable solutions for high-traffic applications — 1M+ monthly actions at 99.95% uptime.</li>
+                        <li>Own the full cycle: requirement analysis, design, implementation, testing, and deployment.</li>
+                        <li>Mentor junior engineers and drive code-review culture across the team.</li>
+                    </ul>
                 </div>
-                <ul class="timeline-list">
-                    <li>Lead the development of backend APIs and frontend interfaces for client projects.</li>
-                    <li>Analyze requirements and architect scalable solutions for high-traffic applications.</li>
-                    <li>Perform rigorous testing and debugging to ensure 99.9% uptime.</li>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot" aria-hidden="true"></div>
+                <div class="timeline-content">
+                    <div class="timeline-date font-mono">Aug 2019 — Dec 2019</div>
+                    <h3>Software Engineer Intern · Syftet Limited</h3>
+                    <ul class="timeline-list">
+                        <li>Built a foundation in Ruby on Rails development and professional engineering workflows.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== Projects ===== -->
+<section id="projects" class="section section-alt reveal-on-scroll">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-number font-mono">04.</span>
+            <h2 class="section-title">Featured projects</h2>
+            <span class="section-line" aria-hidden="true"></span>
+        </div>
+
+        <div class="projects-stack">
+            <article class="project-item">
+                <div class="project-visual">
+                    <a href="https://inweapp.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit iNwe live site">
+                        <img src="assets/images/inwe_web.png" alt="iNwe global chat community interface" class="project-img" loading="lazy">
+                    </a>
+                </div>
+                <div class="project-content">
+                    <p class="project-label font-mono accent">Realtime social platform · Backend</p>
+                    <h3>iNwe Global Chat Community</h3>
+                    <div class="project-desc-card spotlight-card">
+                        <p>
+                            A mobile internet-based chat community with a virtual economy and live gaming.
+                            I designed and built the backend API and game logic — user profiles, private/public
+                            rooms, and realtime virtual gifting — engineered to absorb traffic spikes without dropping messages.
+                        </p>
+                    </div>
+                    <ul class="project-meta">
+                        <li><i data-lucide="activity"></i>1M+ monthly actions</li>
+                        <li><i data-lucide="shield"></i>99.95% uptime SLA</li>
+                    </ul>
+                    <div class="project-tags font-mono">
+                        <span>Rails</span><span>PostgreSQL</span><span>Redis</span><span>RabbitMQ</span><span>Sidekiq</span>
+                    </div>
+                    <a href="https://inweapp.com/" target="_blank" rel="noopener noreferrer" class="project-link">
+                        Visit live site <i data-lucide="external-link"></i>
+                    </a>
+                </div>
+            </article>
+
+            <article class="project-item project-item-reverse">
+                <div class="project-visual">
+                    <a href="https://www.bcsprostuti.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit BCS Prostuti live site">
+                        <img src="assets/images/bcs_prostuti.png" alt="BCS Prostuti educational platform exam dashboard" class="project-img" loading="lazy">
+                    </a>
+                </div>
+                <div class="project-content">
+                    <p class="project-label font-mono accent-2">EdTech platform · Web &amp; Mobile</p>
+                    <h3>BCS Prostuti</h3>
+                    <div class="project-desc-card spotlight-card">
+                        <p>
+                            An educational platform serving 60,000+ curated questions for government job aspirants.
+                            I led the frontend — a responsive Vue.js single-page application — and contributed mobile
+                            features for realtime exam simulations launched on web and mobile simultaneously.
+                        </p>
+                    </div>
+                    <ul class="project-meta">
+                        <li><i data-lucide="layers"></i>60k+ curated questions</li>
+                        <li><i data-lucide="smartphone"></i>Dual web &amp; mobile launch</li>
+                    </ul>
+                    <div class="project-tags font-mono">
+                        <span>Vue.js</span><span>React Native</span><span>Rails API</span><span>PostgreSQL</span>
+                    </div>
+                    <a href="https://www.bcsprostuti.com/" target="_blank" rel="noopener noreferrer" class="project-link">
+                        Visit live site <i data-lucide="external-link"></i>
+                    </a>
+                </div>
+            </article>
+        </div>
+
+        <p class="projects-more">
+            More on <a href="https://github.com/mdmhtuhin" target="_blank" rel="noopener noreferrer">GitHub <i data-lucide="arrow-up-right"></i></a>
+        </p>
+    </div>
+</section>
+
+<!-- ===== Testimonials ===== -->
+<section id="testimonials" class="section reveal-on-scroll">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-number font-mono">05.</span>
+            <h2 class="section-title">What people say</h2>
+            <span class="section-line" aria-hidden="true"></span>
+        </div>
+
+        <div class="testimonials-grid">
+            <figure class="testimonial-card spotlight-card">
+                <i data-lucide="quote" class="quote-icon"></i>
+                <blockquote>
+                    Tuhin delivered exceptional backend architecture for our chat platform. His attention to
+                    performance and scalability helped us handle 1M+ monthly actions seamlessly.
+                </blockquote>
+                <figcaption>
+                    <strong>Project Manager</strong>
+                    <span>iNwe Global</span>
+                </figcaption>
+            </figure>
+            <figure class="testimonial-card spotlight-card">
+                <i data-lucide="quote" class="quote-icon"></i>
+                <blockquote>
+                    The Vue.js SPA developed by Tuhin for our educational platform significantly improved user
+                    experience and performance. His technical expertise is outstanding.
+                </blockquote>
+                <figcaption>
+                    <strong>CTO</strong>
+                    <span>BCS Prostuti</span>
+                </figcaption>
+            </figure>
+        </div>
+    </div>
+</section>
+
+<!-- ===== Writing ===== -->
+<section id="writing" class="section section-alt reveal-on-scroll">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-number font-mono">06.</span>
+            <h2 class="section-title">Writing</h2>
+            <span class="section-line" aria-hidden="true"></span>
+        </div>
+
+        <div class="blog-grid">
+            <a class="blog-card spotlight-card" href="https://medium.com/@mdmhtuhin" target="_blank" rel="noopener noreferrer">
+                <div class="blog-meta font-mono"><span>Backend</span><span>·</span><span>Medium</span></div>
+                <h3>Scaling Rails applications for high traffic</h3>
+                <p>Practices for keeping Ruby on Rails fast and reliable as request volume climbs into the millions.</p>
+                <span class="blog-read">Read on Medium <i data-lucide="arrow-up-right"></i></span>
+            </a>
+            <a class="blog-card spotlight-card" href="https://medium.com/@mdmhtuhin" target="_blank" rel="noopener noreferrer">
+                <div class="blog-meta font-mono"><span>Mobile</span><span>·</span><span>Medium</span></div>
+                <h3>React Native performance optimization</h3>
+                <p>Techniques to cut bundle size, smooth out frame drops, and keep apps responsive across devices.</p>
+                <span class="blog-read">Read on Medium <i data-lucide="arrow-up-right"></i></span>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- ===== Contact ===== -->
+<section id="contact" class="section reveal-on-scroll">
+    <div class="container">
+        <div class="contact-wrap">
+            <div class="contact-intro">
+                <p class="section-number font-mono">07. What's next?</p>
+                <h2>Let's build something<br><span class="accent">worth shipping.</span></h2>
+                <p class="contact-blurb">
+                    I'm actively looking for new opportunities and leadership positions. Whether you have a
+                    question, a project, or just want to say hi — my inbox is always open.
+                </p>
+                <ul class="contact-channels">
+                    <li><i data-lucide="mail"></i><a href="mailto:tuhinh02@gmail.com">tuhinh02@gmail.com</a></li>
+                    <li><svg class="brand-icon accent" width="18" height="18"><use href="#i-whatsapp"/></svg><a href="https://wa.me/8801753583954" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
+                    <li><i data-lucide="timer"></i>Replies in &lt; 24 hours</li>
+                    <li><i data-lucide="globe"></i>Dhaka · UTC+6 · Remote &amp; hybrid</li>
                 </ul>
             </div>
 
-            <!-- Role 2 -->
-            <div class="timeline-item">
-                <div class="timeline-dot" style="background-color: var(--text-muted);"></div>
-                <h3 style="font-size: 1.25rem; font-weight: 700;">Software Engineer (Intern)</h3>
-                <div class="timeline-date">
-                    <span>Sytet Ltd</span>
-                    <span>•</span>
-                    <span>Aug 2019 - Dec 2019</span>
-                </div>
-                <p style="color: var(--text-muted)">
-                    Gained foundational experience in Ruby on Rails development and professional software engineering workflows.
-                </p>
-            </div>
-        </div>
-    </div>
-</section>
+            <form class="contact-form spotlight-card" id="contact-form" action="https://formsubmit.co/tuhinh02@gmail.com" method="POST">
+                <input type="hidden" name="_subject" value="New message from mdmhtuhin.github.io">
+                <input type="hidden" name="_next" value="https://mdmhtuhin.github.io/?sent=true#contact">
+                <input type="text" name="_honey" class="honeypot" tabindex="-1" autocomplete="off" aria-hidden="true">
 
-<!-- Testimonials Section -->
-<section id="testimonials" class="section-padding bg-alt reveal-on-scroll">
-    <div class="container">
-        <div class="section-header">
-            <span class="section-number">05.</span>
-            <h2 class="section-title">Client Testimonials</h2>
-        </div>
-        <div class="testimonials-grid">
-            <div class="testimonial-card">
-                <p>"Tuhin delivered exceptional backend architecture for our chat platform. His attention to performance and scalability helped us handle 1M+ monthly actions seamlessly."</p>
-                <div class="testimonial-author">
-                    <div>
-                        <h4>Project Manager</h4>
-                        <p>iNwe Global</p>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="cf-name">Name</label>
+                        <input id="cf-name" type="text" name="name" class="form-input" placeholder="Jane Doe" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="cf-email">Email</label>
+                        <input id="cf-email" type="email" name="email" class="form-input" placeholder="jane@company.com" required>
                     </div>
                 </div>
-            </div>
-            <div class="testimonial-card">
-                <p>"The Vue.js SPA developed by Tuhin for our educational platform significantly improved user experience and performance. His technical expertise is outstanding."</p>
-                <div class="testimonial-author">
-                    <div>
-                        <h4>CTO</h4>
-                        <p>BCS Prostuti</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Blog Section -->
-<section id="blog" class="section-padding reveal-on-scroll">
-    <div class="container">
-        <div class="section-header">
-            <span class="section-number">06.</span>
-            <h2 class="section-title">Latest Insights</h2>
-        </div>
-        <div class="blog-grid">
-            <article class="blog-card">
-                <div class="blog-content">
-                    <div class="blog-meta">
-                        <span>Backend Development</span>
-                        <span>•</span>
-                        <span>5 min read</span>
-                    </div>
-                    <h3>Scaling Rails Applications for High Traffic</h3>
-                    <p>Best practices for optimizing Ruby on Rails applications to handle millions of requests while maintaining performance and reliability.</p>
-                    <a href="#" class="btn btn-outline" style="margin-top: 1rem;">Read More</a>
-                </div>
-            </article>
-            <article class="blog-card">
-                <div class="blog-content">
-                    <div class="blog-meta">
-                        <span>Mobile Development</span>
-                        <span>•</span>
-                        <span>4 min read</span>
-                    </div>
-                    <h3>React Native Performance Optimization</h3>
-                    <p>Techniques to improve React Native app performance, reduce bundle size, and enhance user experience across different devices.</p>
-                    <a href="#" class="btn btn-outline" style="margin-top: 1rem;">Read More</a>
-                </div>
-            </article>
-        </div>
-    </div>
-</section>
-
-<!-- Contact Section -->
-<section id="contact" class="contact-section reveal-on-scroll">
-    <div class="container">
-        <div class="contact-card">
-            <p class="font-mono text-yellow" style="margin-bottom: 1rem;">07. What's Next?</p>
-            <h2 style="font-size: 2.5rem; font-weight: 700; margin-bottom: 1.5rem;">Get In Touch</h2>
-            <p style="font-size: 1.25rem; color: var(--text-muted); max-width: 600px; margin: 0 auto 2.5rem auto;">
-                I am actively looking for new opportunities and leadership positions. Whether you have a question or just want to say hi, my inbox is always open.
-            </p>
-
-            <form class="contact-form" id="contact-form">
                 <div class="form-group">
-                    <input type="text" class="form-input" placeholder="Your Name" required>
+                    <label for="cf-subject">Subject</label>
+                    <input id="cf-subject" type="text" name="subject" class="form-input" placeholder="Senior backend role / project inquiry">
                 </div>
                 <div class="form-group">
-                    <input type="email" class="form-input" placeholder="Your Email" required>
+                    <label for="cf-message">Message</label>
+                    <textarea id="cf-message" name="message" class="form-textarea" rows="5" placeholder="Tell me about your project…" required></textarea>
                 </div>
-                <div class="form-group">
-                    <input type="text" class="form-input" placeholder="Subject">
-                </div>
-                <div class="form-group">
-                    <textarea class="form-textarea" rows="5" placeholder="Your Message" required></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary" style="width: 100%;">
-                    <span class="btn-text">Send Message</span>
-                    <div class="loading-spinner" style="display: none;"></div>
+                <button type="submit" class="btn btn-primary btn-block">
+                    <span class="btn-text">Send message</span> <i data-lucide="send"></i>
                 </button>
+                <p class="form-success" id="form-success" hidden>
+                    <i data-lucide="check-circle-2"></i> Thanks — your message is on its way. I'll get back to you soon.
+                </p>
             </form>
-
-            <div class="contact-meta">
-                <div class="contact-meta-item">
-                    <span class="contact-meta-label">Response time</span>
-                    <span class="contact-meta-value"><i data-lucide="timer"></i> &lt; 24 hrs</span>
-                </div>
-                <div class="contact-meta-item">
-                    <span class="contact-meta-label">Timezone</span>
-                    <span class="contact-meta-value"><i data-lucide="globe"></i> Dhaka (UTC+6)</span>
-                </div>
-                <div class="contact-meta-item">
-                    <span class="contact-meta-label">Preferred</span>
-                    <span class="contact-meta-value"><i data-lucide="handshake"></i> Remote & Hybrid</span>
-                </div>
-            </div>
-
-            <footer>
-                <p>© 2025 Md Mehedi Hasan Tuhin. Crafted with passion and precision. Let's collaborate on your next project!</p>
-                <div class="social-links">
-                    <a href="https://github.com/mdmhtuhin" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i data-lucide="github"></i></a>
-                    <a href="https://www.linkedin.com/in/mdmhtuhin/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
-                    <a href="https://www.facebook.com/mdmhtuhin02" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i data-lucide="facebook"></i></a>
-                    <a href="https://x.com/mdmhtuhin" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i data-lucide="twitter"></i></a>
-                    <a href="https://medium.com/@mdmhtuhin" target="_blank" rel="noopener noreferrer" aria-label="Medium"><i data-lucide="book-open"></i></a>
-                    <a href="https://wa.me/8801753583954" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i data-lucide="message-circle"></i></a>
-                </div>
-            </footer>
         </div>
     </div>
 </section>
 
-<!-- Back to Top Button -->
-<button class="back-to-top" id="back-to-top" aria-label="Back to Top">
+</main>
+
+<!-- ===== Footer ===== -->
+<footer class="site-footer">
+    <div class="container footer-inner">
+        <p class="font-mono">© 2026 Md Mehedi Hasan Tuhin — designed &amp; built by hand, no frameworks.</p>
+        <div class="social-links">
+            <a href="https://github.com/mdmhtuhin" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><svg class="brand-icon" width="18" height="18"><use href="#i-github"/></svg></a>
+            <a href="https://www.linkedin.com/in/mdmhtuhin/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg class="brand-icon" width="18" height="18"><use href="#i-linkedin"/></svg></a>
+            <a href="https://www.facebook.com/mdmhtuhin02" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><svg class="brand-icon" width="18" height="18"><use href="#i-facebook"/></svg></a>
+            <a href="https://x.com/mdmhtuhin" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)"><svg class="brand-icon" width="18" height="18"><use href="#i-x"/></svg></a>
+            <a href="https://medium.com/@mdmhtuhin" target="_blank" rel="noopener noreferrer" aria-label="Medium"><svg class="brand-icon" width="18" height="18"><use href="#i-medium"/></svg></a>
+            <a href="https://wa.me/8801753583954" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><svg class="brand-icon" width="18" height="18"><use href="#i-whatsapp"/></svg></a>
+        </div>
+    </div>
+</footer>
+
+<button class="back-to-top" id="back-to-top" aria-label="Back to top">
     <i data-lucide="arrow-up"></i>
 </button>
 
-<!-- External JavaScript -->
+<!-- Brand icon sprite (Lucide no longer ships brand icons) -->
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
+    <symbol id="i-github" viewBox="0 0 24 24"><path fill="currentColor" d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></symbol>
+    <symbol id="i-linkedin" viewBox="0 0 24 24"><path fill="currentColor" d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z"/></symbol>
+    <symbol id="i-facebook" viewBox="0 0 24 24"><path fill="currentColor" d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><path fill="currentColor" d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></symbol>
+    <symbol id="i-whatsapp" viewBox="0 0 24 24"><path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></symbol>
+    <symbol id="i-medium" viewBox="0 0 24 24"><path fill="currentColor" d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zm7.42 0c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z"/></symbol>
+</svg>
+
 <script src="assets/js/script.js" defer></script>
 </body>
 </html>
