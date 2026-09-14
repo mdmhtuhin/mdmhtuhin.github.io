@@ -96,7 +96,6 @@
   .contact-links a>strong{font-size:13px}
 }
 @media (min-width: 761px){
-  /* Keep the three desktop contact cards balanced and prevent implicit-grid text wrapping. */
   .contact-links{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:30px}
   .contact-links a{min-width:0;display:grid;grid-template-columns:48px minmax(0,1fr);grid-template-rows:auto auto;grid-template-areas:"icon label" "icon value";column-gap:14px;row-gap:5px;align-items:center;padding:18px;border:1px solid var(--line-strong);border-radius:16px;background:linear-gradient(145deg,rgba(255,255,255,.045),rgba(255,255,255,.012));overflow:hidden;transition:border-color .2s ease,transform .2s ease,background .2s ease}
   .contact-links a:hover{border-color:rgba(255,48,72,.42);transform:translateY(-3px);background:linear-gradient(145deg,var(--red-soft),rgba(255,255,255,.015))}
@@ -106,4 +105,16 @@
 }
 @media (prefers-reduced-motion: reduce){
   .hero-card,.project-card,.skill-panel,.about-card,.contact-links a{transition:none!important}
+}
+
+/* Brand icon fallback: Lucide is an interface icon set, so use stable local SVG glyphs for LinkedIn/GitHub. */
+.contact-links a:nth-child(2)>i,.contact-links a:nth-child(2)>svg,.contact-links a:nth-child(3)>i,.contact-links a:nth-child(3)>svg{display:none!important}
+.contact-links a:nth-child(2)::before,.contact-links a:nth-child(3)::before{content:"";grid-area:icon;width:48px;height:48px;border:1px solid rgba(255,48,72,.22);border-radius:14px;background-color:var(--red-soft);background-repeat:no-repeat;background-position:center;background-size:25px 25px}
+.contact-links a:nth-child(2)::before{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23ff3048'%3E%3Cpath d='M6.94 8.5H3.27V20h3.67V8.5ZM5.1 3A2.14 2.14 0 1 0 5.1 7.28 2.14 2.14 0 0 0 5.1 3ZM20.73 13.42c0-3.47-1.85-5.09-4.32-5.09-1.99 0-2.88 1.09-3.38 1.86V8.5H9.36V20h3.67v-6.4c0-1.69.32-3.33 2.42-3.33 2.07 0 2.1 1.94 2.1 3.44V20h3.18v-6.58Z'/%3E%3C/svg%3E")}
+.contact-links a:nth-child(3)::before{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23ff3048'%3E%3Cpath d='M12 .5a12 12 0 0 0-3.79 23.39c.6.11.82-.26.82-.58v-2.04c-3.34.73-4.04-1.42-4.04-1.42-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.73.08-.73 1.2.08 1.84 1.23 1.84 1.23 1.07 1.83 2.8 1.3 3.48.99.11-.77.42-1.3.76-1.6-2.66-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.17 0 0 1.01-.32 3.3 1.23.96-.27 1.98-.4 3-.4s2.04.13 3 .4c2.29-1.55 3.3-1.23 3.3-1.23.66 1.65.24 2.87.12 3.17.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.62-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.69.82.57A12 12 0 0 0 12 .5Z'/%3E%3C/svg%3E")}
+@media (max-width:760px){
+  .contact-links a:nth-child(2)::before,.contact-links a:nth-child(3)::before{width:42px;height:42px;border-radius:12px;background-size:22px 22px}
+}
+@media (max-width:420px){
+  .contact-links a:nth-child(2)::before,.contact-links a:nth-child(3)::before{width:40px;height:40px;border-radius:12px;background-size:21px 21px}
 }
