@@ -65,9 +65,12 @@
   .contact-card{grid-template-columns:1fr;padding:32px 22px;border-radius:18px}
   .contact-visual{display:none}
   .contact-copy h2{font-size:clamp(38px,11vw,50px)}
-  .contact-links{grid-template-columns:1fr;gap:9px;margin-top:28px}
-  .contact-links a{min-width:0;padding:14px}
-  .contact-links strong{overflow-wrap:anywhere}
+  .contact-links{grid-template-columns:1fr;gap:12px;margin-top:28px}
+  .contact-links a{min-width:0;padding:15px 16px;display:grid;grid-template-columns:42px minmax(0,1fr);grid-template-rows:auto auto;grid-template-areas:"icon label" "icon value";column-gap:13px;row-gap:3px;align-items:center;border:1px solid var(--line-strong);border-radius:15px;background:linear-gradient(145deg,rgba(255,255,255,.045),rgba(255,255,255,.012));transition:border-color .2s ease,transform .2s ease,background .2s ease;overflow:hidden}
+  .contact-links a:hover{border-color:rgba(255,48,72,.42);transform:translateY(-2px);background:linear-gradient(145deg,var(--red-soft),rgba(255,255,255,.015))}
+  .contact-links a>i{grid-area:icon;width:42px;height:42px;padding:10px;border:1px solid rgba(255,48,72,.22);border-radius:12px;background:var(--red-soft);color:var(--red);flex:none}
+  .contact-links a>span{grid-area:label;font:500 10px/1.2 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--faint)}
+  .contact-links a>strong{grid-area:value;display:block;min-width:0;color:var(--text);font:700 14px/1.35 var(--body);letter-spacing:-.01em;overflow-wrap:anywhere;word-break:normal}
   .site-footer{padding:22px 0}
   .footer-inner{align-items:flex-start;flex-wrap:wrap;gap:15px}
   .footer-inner p{order:3;width:100%;line-height:1.5}
@@ -86,7 +89,21 @@
   .project-media{height:205px}
   .project-body h3{font-size:22px}
   .button{font-size:13px}
+  .contact-card{padding:28px 16px}
+  .contact-links{gap:10px}
+  .contact-links a{grid-template-columns:40px minmax(0,1fr);padding:14px 13px;column-gap:12px}
+  .contact-links a>i{width:40px;height:40px;padding:9px}
+  .contact-links a>strong{font-size:13px}
+}
+@media (min-width: 761px){
+  /* Keep the three desktop contact cards balanced and prevent implicit-grid text wrapping. */
+  .contact-links{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:30px}
+  .contact-links a{min-width:0;display:grid;grid-template-columns:48px minmax(0,1fr);grid-template-rows:auto auto;grid-template-areas:"icon label" "icon value";column-gap:14px;row-gap:5px;align-items:center;padding:18px;border:1px solid var(--line-strong);border-radius:16px;background:linear-gradient(145deg,rgba(255,255,255,.045),rgba(255,255,255,.012));overflow:hidden;transition:border-color .2s ease,transform .2s ease,background .2s ease}
+  .contact-links a:hover{border-color:rgba(255,48,72,.42);transform:translateY(-3px);background:linear-gradient(145deg,var(--red-soft),rgba(255,255,255,.015))}
+  .contact-links a>i{grid-area:icon;width:48px;height:48px;padding:11px;border:1px solid rgba(255,48,72,.22);border-radius:14px;background:var(--red-soft);color:var(--red);flex:none}
+  .contact-links a>span{grid-area:label;font:500 10px/1.2 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--faint)}
+  .contact-links a>strong{grid-area:value;display:block;min-width:0;color:var(--text);font:700 14px/1.35 var(--body);letter-spacing:-.01em;overflow-wrap:anywhere;word-break:normal}
 }
 @media (prefers-reduced-motion: reduce){
-  .hero-card,.project-card,.skill-panel,.about-card{transition:none!important}
+  .hero-card,.project-card,.skill-panel,.about-card,.contact-links a{transition:none!important}
 }
