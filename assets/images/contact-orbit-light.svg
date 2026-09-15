@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 700" role="img" aria-labelledby="title desc">
+  <title id="title">Build, Ship, Improve</title>
+  <desc id="desc">Light-theme futuristic orbital engineering visual with a centered MT monogram and moving colored nodes.</desc>
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="42%" r="62%"><stop offset="0" stop-color="#fff5f6"/><stop offset=".55" stop-color="#f5f5f7"/><stop offset="1" stop-color="#ececf0"/></radialGradient>
+    <radialGradient id="redGlow"><stop offset="0" stop-color="#e11d3f" stop-opacity=".2"/><stop offset="1" stop-color="#e11d3f" stop-opacity="0"/></radialGradient>
+    <linearGradient id="redStroke" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#e11d3f"/><stop offset=".55" stop-color="#ff4d67"/><stop offset="1" stop-color="#e11d3f" stop-opacity=".2"/></linearGradient>
+    <linearGradient id="tealStroke"><stop stop-color="#078a61"/><stop offset="1" stop-color="#078a61" stop-opacity="0"/></linearGradient>
+    <linearGradient id="amberStroke"><stop stop-color="#a8640a"/><stop offset="1" stop-color="#a8640a" stop-opacity="0"/></linearGradient>
+    <filter id="blur20"><feGaussianBlur stdDeviation="20"/></filter>
+    <filter id="blur8"><feGaussianBlur stdDeviation="8"/></filter>
+    <filter id="glow"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="700" height="700" rx="28" fill="url(#bg)"/>
+  <circle cx="350" cy="325" r="245" fill="url(#redGlow)" opacity=".7" filter="url(#blur20)"/>
+  <path d="M78 454 C155 588 456 585 620 357 C675 280 623 232 545 254" fill="none" stroke="#e11d3f" stroke-opacity=".12" stroke-width="5" filter="url(#blur8)"/>
+  <path d="M72 450 C155 570 457 565 620 350" fill="none" stroke="url(#redStroke)" stroke-width="2.5" opacity=".8"/>
+  <path d="M105 235 C210 140 505 145 596 290" fill="none" stroke="#e11d3f" stroke-opacity=".12" stroke-width="2"/>
+  <g transform="rotate(-12 350 325)">
+    <circle cx="350" cy="325" r="245" fill="none" stroke="#e11d3f" stroke-opacity=".16" stroke-width="2"/>
+    <circle cx="350" cy="325" r="232" fill="none" stroke="#e11d3f" stroke-opacity=".38" stroke-width="1.5" stroke-dasharray="9 8"><animateTransform attributeName="transform" type="rotate" from="0 350 325" to="360 350 325" dur="24s" repeatCount="indefinite"/></circle>
+    <circle cx="350" cy="325" r="205" fill="none" stroke="#555563" stroke-opacity=".24" stroke-width="1.5"/>
+  </g>
+  <ellipse cx="350" cy="325" rx="205" ry="205" fill="none" stroke="#b8b8c0" stroke-opacity=".45" stroke-width="2"/>
+  <path d="M350 120 A205 205 0 0 1 528 427" fill="none" stroke="url(#redStroke)" stroke-width="5" stroke-linecap="round"/>
+  <path d="M172 427 A205 205 0 0 1 350 120" fill="none" stroke="url(#tealStroke)" stroke-width="4" stroke-linecap="round"/>
+  <path d="M528 427 A205 205 0 0 1 350 530" fill="none" stroke="url(#amberStroke)" stroke-width="4" stroke-linecap="round"/>
+  <g>
+    <g><circle cx="350" cy="120" r="8" fill="#e11d3f" filter="url(#glow)"/><animateTransform attributeName="transform" type="rotate" from="0 350 325" to="360 350 325" dur="9s" repeatCount="indefinite"/></g>
+    <g><circle cx="172" cy="427" r="7" fill="#078a61" filter="url(#glow)"/><animateTransform attributeName="transform" type="rotate" from="120 350 325" to="480 350 325" dur="12s" repeatCount="indefinite"/></g>
+    <g><circle cx="528" cy="427" r="7" fill="#a8640a" filter="url(#glow)"/><animateTransform attributeName="transform" type="rotate" from="240 350 325" to="600 350 325" dur="14s" repeatCount="indefinite"/></g>
+  </g>
+  <circle cx="350" cy="325" r="150" fill="none" stroke="#555563" stroke-opacity=".18" stroke-width="1.5"/>
+  <circle cx="350" cy="325" r="126" fill="none" stroke="#e11d3f" stroke-opacity=".12" stroke-width="1" stroke-dasharray="4 12"><animateTransform attributeName="transform" type="rotate" from="0 350 325" to="-360 350 325" dur="16s" repeatCount="indefinite"/></circle>
+  <rect x="238" y="213" width="224" height="224" rx="44" fill="#ffffff" stroke="#e11d3f" stroke-opacity=".18"/>
+  <rect x="249" y="224" width="202" height="202" rx="38" fill="#f3f3f6"/>
+  <circle cx="350" cy="325" r="118" fill="#e11d3f" opacity=".08" filter="url(#blur20)"/>
+  <g fill="none" stroke="#e11d3f" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)">
+    <path d="M292 378V276l58 56 58-56v102"/>
+    <path d="M315 294h70M350 294v84"/>
+  </g>
+  <g fill="none" stroke="#be123c" stroke-width="2" opacity=".75">
+    <path d="M292 378V276l58 56 58-56v102"/>
+    <path d="M315 294h70M350 294v84"/>
+  </g>
+  <g fill="#e11d3f" opacity=".7"><circle cx="116" cy="310" r="3"/><circle cx="592" cy="458" r="3"/><circle cx="198" cy="171" r="2"/><circle cx="520" cy="188" r="2.5"/></g>
+  <g fill="#33333b" opacity=".22"><circle cx="132" cy="202" r="2"/><circle cx="575" cy="285" r="2"/><circle cx="184" cy="515" r="2"/><circle cx="485" cy="530" r="1.8"/></g>
+  <text x="350" y="592" text-anchor="middle" fill="#4b4b55" font-family="monospace" font-size="19" letter-spacing="4">BUILD · SHIP · IMPROVE</text>
+  <line x1="250" y1="620" x2="450" y2="620" stroke="#e11d3f" stroke-opacity=".18"/>
+  <line x1="318" y1="620" x2="382" y2="620" stroke="#e11d3f" stroke-width="4" stroke-linecap="round" filter="url(#glow)"/>
+</svg>
