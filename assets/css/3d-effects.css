@@ -33,6 +33,13 @@
 /* Hover adds a stronger 3D lift */
 .about-card:hover,.skill-panel:hover,.project-card:hover{transform:translate3d(0,-10px,20px) rotateX(2deg)}
 
+/* Interactive cursor-follow tilt */
+.js-tilt{transform-style:preserve-3d;will-change:transform;transition:transform .12s ease-out}
+.js-tilt.is-tilting{transition:none}
+.tilt-shine{position:absolute;inset:0;border-radius:inherit;pointer-events:none;opacity:0;mix-blend-mode:screen;background:radial-gradient(circle at var(--shine-x,50%) var(--shine-y,50%),rgba(255,255,255,.14),transparent 34%);transition:opacity .25s ease;z-index:5}
+.js-tilt.is-tilting .tilt-shine{opacity:1}
+.skill-panel,.hero-card{overflow:hidden}
+
 @media(max-width:760px){
   .hero:after{width:300px;height:300px;right:-150px;top:24%;opacity:.65}
   .hero-card{animation-duration:8s}
@@ -42,4 +49,5 @@
 @media(prefers-reduced-motion:reduce){
   .hero-card,.hero:after,.ambient-one,.ambient-two,.about-card,.skill-panel,.project-card,.contact-orbit:before,.contact-orbit:after{animation:none!important;transform:none!important}
   .about-card:hover,.skill-panel:hover,.project-card:hover{transform:none!important}
+  .js-tilt{transition:none!important;transform:none!important}
 }
