@@ -1,0 +1,9 @@
+/* Animated orbital contact visual */
+.contact-visual{position:relative;display:grid;place-items:center;min-height:420px;overflow:visible}
+.contact-visual-image{width:min(100%,520px);height:auto;filter:drop-shadow(0 24px 70px rgba(255,48,72,.16));animation:contactVisualFloat 7s ease-in-out infinite;transform-origin:center}
+@keyframes contactVisualFloat{0%,100%{transform:translate3d(0,0,0) rotate(-1deg) scale(1)}50%{transform:translate3d(0,-10px,0) rotate(1deg) scale(1.015)}}
+.contact-visual:after{content:"";position:absolute;width:72%;height:18%;bottom:8%;left:14%;border-radius:50%;background:radial-gradient(ellipse,rgba(255,48,72,.18),transparent 68%);filter:blur(14px);animation:contactShadow 7s ease-in-out infinite;pointer-events:none}
+@keyframes contactShadow{0%,100%{transform:scale(.9);opacity:.5}50%{transform:scale(1);opacity:.85}}
+@media(max-width:760px){.contact-visual{display:grid;min-height:0;margin-top:34px}.contact-visual-image{width:min(100%,430px)}}
+@media(max-width:420px){.contact-visual{margin-top:24px}.contact-visual-image{width:100%}}
+@media(prefers-reduced-motion:reduce){.contact-visual-image,.contact-visual:after{animation:none!important}}
